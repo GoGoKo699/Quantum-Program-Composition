@@ -148,7 +148,7 @@ Three source conventions matter throughout:
 ### M16 — A universal PGM instrument and deterministic completion
 
 - **Central question:** How does square-root normalization turn the overlapping alternatives into a valid universal processor?
-- **Understanding target:** Explain $J_{rs}=\sqrt d\,L_{rs}G^{-1/2}$ and the support identity for the sum of its effects. Relate these effects to the pretty-good measurement for a known Bell-signal ensemble, and account for the kernel by a separate failure output. Distinguish the effects from the routed quantum outputs that make this an instrument.
+- **Understanding target:** Explain $J_{rs}=\sqrt dL_{rs}G^{-1/2}$ and the support identity for the sum of its effects. Relate these effects to the pretty-good measurement for a known Bell-signal ensemble, and account for the kernel by a separate failure output. Distinguish the effects from the routed quantum outputs that make this an instrument.
 - **Dependencies and story role:** M07, M10, M15. Establishes physical legality before claiming fidelity on the promised inputs.
 - **Conceptual connection:** The measured signals and their normalization are known from $d,m,n$; no program-dependent correction is supplied. The generic PGM prescription is inherited machinery.
 - **Sources:** [Watrous §§2.3.2][w232] and [3.1.2][w312], including its PGM discussion; [instrument and completion](../science/construction.md#1-a-physical-instrument-on-two-pools), [PGM relation](../science/construction.md#relation-to-the-pretty-good-measurement).
@@ -196,7 +196,7 @@ Three source conventions matter throughout:
 ### M22 — Ordered compressed moments limit distinguishability
 
 - **Central question:** How does the common harmonic structure yield a quantitative trace-distance bound?
-- **Understanding target:** Explain the common positive blocks of the compressed moments, their ordering $A\succeq B$, and the control of their missing masses. Connect these facts to $\mathrm{TD}(\Omega_{\rm c},\Omega_{\rm i})\leq\min\{1,2mn/d^2\}$. Distinguish commutation of an averaged moment with the compression from invariance of the harmonic subspace under every independent group element.
+- **Understanding target:** Explain the common positive blocks of the compressed moments, their ordering $A\succeq B$, and the control of their missing masses. Connect these facts to $\mathrm{TD}(\Omega_{\rm c},\Omega_{\rm i})\leq\min\lbrace1,2mn/d^2\rbrace$. Distinguish commutation of an averaged moment with the compression from invariance of the harmonic subspace under every independent group element.
 - **Dependencies and story role:** M09–M10, M20–M21. Converts representation structure and dimension counting into an operational information bound.
 - **Conceptual connection:** The independent moment's block structure is essential; pretending its underlying representation preserves the harmonic subspace would omit a load-bearing step.
 - **Sources:** [Watrous §§1.1.3][w113], [3.1.1][w311] and [7.2.2][w722] for norms, discrimination and invariant averages; [ordered compressed moments](../science/converse.md#13-the-two-harmonic-moment-blocks-are-ordered).

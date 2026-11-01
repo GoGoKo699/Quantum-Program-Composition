@@ -43,12 +43,13 @@ output target here.
 
 **Milestones M06–M08 and M14.** Take $d=2$ and, for a worked example, choose
 
-$$
-H=\frac1{\sqrt2}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix},
-\qquad
-S=\begin{pmatrix}1&0\\0&i\end{pmatrix}.
-$$
+$
+H|0\rangle=\frac{|0\rangle+|1\rangle}{\sqrt2},\qquad H|1\rangle=\frac{|0\rangle-|1\rangle}{\sqrt2}.
+$
+
+$
+S|0\rangle=|0\rangle,\qquad S|1\rangle=i|1\rangle.
+$
 
 Their programs are
 
@@ -75,7 +76,7 @@ $$
 $$
 
 Its squared norm is $1/4$. Thus the two-outcome measurement
-$\{|\Phi_2\rangle\langle\Phi_2|,I-|\Phi_2\rangle\langle\Phi_2|\}$
+$\lbrace|\Phi_2\rangle\langle\Phi_2|,I-|\Phi_2\rangle\langle\Phi_2|\rbrace$
 has a designated successful outcome with probability $1/4$. Conditioned on
 that outcome, the output is exactly the normalized program
 
@@ -127,7 +128,7 @@ identity on the others. If $L_{rs}$ contracts that pair and routes its outer
 halves to the output, the useful instrument operators are
 
 $$
-J_{rs}=\sqrt d\,L_{rs}G^{-1/2}.
+J_{rs}=\sqrt dL_{rs}G^{-1/2}.
 $$
 
 The inverse vanishes on the kernel. These operators satisfy
@@ -245,7 +246,7 @@ locations explicitly, and those gates are counted.
 The resulting conservative count is
 
 $$
-\widetilde O\!\left(d(m^2+n^2)(\log d+\log(m+n))\right)
+\widetilde O\left(d(m^2+n^2)(\log d+\log(m+n))\right)
 $$
 
 known gates, with logarithmic accuracy factors suppressed. At balanced,

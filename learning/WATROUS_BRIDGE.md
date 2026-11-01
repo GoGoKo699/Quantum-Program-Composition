@@ -78,7 +78,7 @@ Watrous's Definition 3.11 uses
 
 $$
 F_{\mathrm W}(\rho,\sigma)
-=\|\sqrt\rho\sqrt\sigma\|_1.
+=\Vert\sqrt\rho\sqrt\sigma\Vert_1.
 $$
 
 For a normalized pure target $|w\rangle$, this project uses

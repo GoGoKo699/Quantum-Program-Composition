@@ -14,6 +14,8 @@ product is the identity.
 
 For a unitary $U\in\mathrm U(d)$, use the normalized Choi convention
 
+**Equation (1).**
+
 $$
 |U\rangle=\frac{1}{\sqrt d}\sum_{i,j=1}^d U_{ij}|i\rangle|j\rangle,
 \qquad \psi_U=|U\rangle\langle U|.
@@ -32,7 +34,6 @@ For $d\geq2$ and $F_0\geq d^{-2}$,
 
 $$
 \boxed{mn\geq\frac{p_0}{2}\bigl(d^2F_0-1\bigr).}
-\tag{1}
 $$
 
 The copy budgets are worst-case bounds, including all branches of an adaptive
@@ -51,16 +52,17 @@ increase the fidelity with the corresponding pure target.
 
 Define two density operators, using normalized Haar measure:
 
+**Equation (2).**
+
 $$
 \begin{aligned}
 \Omega_{\mathrm c}
- &=\mathbb E_U\,
+ &=\mathbb E_U
    \psi_U^{\otimes m}\otimes\psi_{\overline U}^{\otimes n},\\
 \Omega_{\mathrm i}
- &=\mathbb E_{U,W}\,
+ &=\mathbb E_{U,W}
    \psi_U^{\otimes m}\otimes\psi_{\overline W}^{\otimes n}.
 \end{aligned}
-\tag{2}
 $$
 
 Here $U,W$ are independent in the second line. Complex conjugation in this
@@ -71,11 +73,12 @@ $|\overline U\rangle$.
 
 **Moment comparison.** For every $d\geq2$ and $m,n\geq1$,
 
+**Equation (3).**
+
 $$
 \mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
-:=\frac12\|\Omega_{\mathrm c}-\Omega_{\mathrm i}\|_1
-\leq\min\{1,\frac{2mn}{d^2}\}.
-\tag{3}
+:=\frac12\Vert\Omega_{\mathrm c}-\Omega_{\mathrm i}\Vert_1
+\leq\min\lbrace1,\frac{2mn}{d^2}\rbrace.
 $$
 
 The proof of (3) uses the mixed-tensor commutant and its traceless subspace.
@@ -89,6 +92,8 @@ below is an application of those established representation facts.
 
 Regroup the first halves of all Choi copies into $K_A$ and their second halves
 into $K_B$, where
+
+**Equation (4).**
 
 $$
 K=(\mathbb C^d)^{\otimes m}\otimes
@@ -104,26 +109,27 @@ $$
 R(U)=U^{\otimes m}\otimes\overline U^{\otimes n},
 \qquad
 S(U,W)=U^{\otimes m}\otimes\overline W^{\otimes n}.
-\tag{4}
 $$
 
 For each pair consisting of one first-pool factor and one second-pool
 factor, let $C_{ij}$ contract those factors by the canonical pairing
 $\langle\Phi_d|\sqrt d$. Define
 
+**Equation (5).**
+
 $$
 H=\bigcap_{i=1}^m\bigcap_{j=1}^n\ker C_{ij},
 \qquad P=\Pi_H,
 \qquad q=1-\frac{\dim H}{D}.
-\tag{5}
 $$
 
 Every contraction has rank $d^{m+n-2}$. The codimension of an intersection
 is at most the sum of the codimensions, so
 
+**Equation (6).**
+
 $$
 q\leq\frac{mn}{d^2}.
-\tag{6}
 $$
 
 The projection $P$ is real in the standard basis. It commutes with $R(U)$
@@ -149,12 +155,13 @@ when the correlated Choi moment is projected onto $H$ on both halves.
 To identify the multiplicities on $H$, first apply ordinary Schur–Weyl
 duality separately to the two pools:
 
+**Equation (7).**
+
 $$
 K=\bigoplus_a V_a\otimes M_a,
 \qquad
 V_a=V_\lambda\otimes\overline{V_\nu},
 \qquad M_a=M_\lambda\otimes M_\nu.
-\tag{7}
 $$
 
 The index $a=(\lambda,\nu)$ ranges over partitions of $m,n$ with at most d
@@ -166,11 +173,12 @@ $v_a=\dim V_a$ and $f_a=\dim M_a$.
 Because $P$ commutes with the within-pool permutation algebra, its range has
 the form
 
+**Equation (8).**
+
 $$
 H=\bigoplus_a W_a\otimes M_a,
 \qquad W_a\subseteq V_a,
 \qquad 0\leq w_a:=\dim W_a\leq v_a.
-\tag{8}
 $$
 
 The compressed commutant $P\mathcal B P$ is exactly the represented
@@ -195,6 +203,8 @@ unitary representation has decomposition
 $\bigoplus_a V_a\otimes M_a$ with inequivalent irreducible $V_a$, its
 maximally entangled vector decomposes as
 
+**Equation (9).**
+
 $$
 |\Phi_D\rangle
 =\bigoplus_a\sqrt{\frac{v_af_a}{D}}
@@ -209,7 +219,6 @@ $$
 \bigoplus_a\frac{f_a}{D v_a}
  I_{V_a,A}\otimes I_{\overline{V_a},B}
  \otimes|\Phi_{M_a}\rangle\langle\Phi_{M_a}|.
-\tag{9}
 $$
 
 Paired conjugate bases are used on the two Choi halves. Applying (9) to the
@@ -224,12 +233,13 @@ factors restricted to $W_a$, while retaining the denominator $v_a$.
 For the correlated moment, centrality and the irreducibility established
 above give
 
+**Equation (10).**
+
 $$
 A:=\Pi\Omega_{\mathrm c}\Pi
 =\bigoplus_{a:w_a>0}\frac{f_a}{D w_a}
  I_{W_a,A}\otimes I_{\overline{W_a},B}
  \otimes|\Phi_{M_a}\rangle\langle\Phi_{M_a}|.
-\tag{10}
 $$
 
 The correlated moment also commutes with $\Pi$, because $H$ and $H^\perp$
@@ -237,20 +247,22 @@ contain disjoint correlated-group irreducible representations. The two
 compressed moments have the same positive blocks and $w_a\leq v_a$.
 Consequently,
 
+**Equation (11).**
+
 $$
 A\succeq B,
 \qquad
 \mathrm{tr}A=\frac1D\sum_a f_aw_a=1-q.
-\tag{11}
 $$
 
 Moreover, using $w^2/v\geq2w-v$,
+
+**Equation (12).**
 
 $$
 \mathrm{tr}B
 =\frac1D\sum_a\frac{f_aw_a^2}{v_a}
 \geq1-2q.
-\tag{12}
 $$
 
 Let $\delta=\mathrm{tr}(A-B)$. Equations (11)–(12) give
@@ -258,13 +270,14 @@ $0\leq\delta\leq q$. Block diagonality implies that
 $\Omega_{\mathrm c}-A$ and $\Omega_{\mathrm i}-B$ are positive, with traces
 $q$ and $q+\delta$. The triangle inequality therefore gives
 
+**Equation (13).**
+
 $$
 \begin{aligned}
-\frac12\|\Omega_{\mathrm c}-\Omega_{\mathrm i}\|_1
+\frac12\Vert\Omega_{\mathrm c}-\Omega_{\mathrm i}\Vert_1
 &\leq\frac12\bigl(\delta+q+(q+\delta)\bigr)\\
 &=q+\delta\leq2q\leq\frac{2mn}{d^2}.
 \end{aligned}
-\tag{13}
 $$
 
 Together with the universal trace-distance bound of one, this proves (3).
@@ -276,9 +289,10 @@ purported composer, after any unwanted output registers have been traced
 out. Introduce independent known Haar unitaries $A,B,C$ and transform every
 input copy according to
 
+**Equation (14).**
+
 $$
 (U,V)\longmapsto(AUB^\dagger,\ BVC^\dagger).
-\tag{14}
 $$
 
 These transformations are the known gates $A\otimes\overline B$ on the
@@ -301,10 +315,11 @@ are the span of $|\Phi_d\rangle$ and its orthogonal complement, corresponding
 to scalar and traceless matrices. Covariance consequently gives the
 successful normalized output
 
+**Equation (15).**
+
 $$
 \rho_{U,V}
 =F\psi_{UV}+\frac{1-F}{d^2-1}(I-\psi_{UV}).
-\tag{15}
 $$
 
 Now compare two priors on the original input programs:
@@ -324,11 +339,12 @@ $\mathbb E_{U,V}\psi_{UV}=I/d^2$, so its probability is $p/d^2$.
 Contractivity of trace distance under the entire instrument and final test
 gives
 
+**Equation (16).**
+
 $$
 p\left(F-\frac1{d^2}\right)
 \leq\mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
 \leq\frac{2mn}{d^2}.
-\tag{16}
 $$
 
 Substituting $p\geq p_0$ and $F\geq F_0\geq d^{-2}$ proves (1).
@@ -339,6 +355,8 @@ The same symmetrization also identifies a useful scope detail. For any fixed
 pair $U,V$, the two transformed unitaries in (14) are independent Haar
 unitaries. If the original instrument has Haar-average success probability
 $\bar p$ and Haar-average unnormalized target overlap
+
+**Equation (17).**
 
 $$
 \bar s=\mathbb E_{U,V}
@@ -351,7 +369,6 @@ Thus (16) also implies
 
 $$
 \bar s-\frac{\bar p}{d^2}\leq\frac{2mn}{d^2}.
-\tag{17}
 $$
 
 In particular, deterministic Haar-average fidelity is covered. For heralded
