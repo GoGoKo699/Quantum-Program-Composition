@@ -33,7 +33,17 @@ The [related-work account](references/RELATED_WORK.md) credits Choi-state compos
 
 ## Reading and reproduction
 
-Start with the [scientific account](science/README.md). For an exact statement, go directly to [Model and composition law](science/model.md). The [verification guide](verification/README.md) explains the finite checks and their limits.
+Choose a route according to the question you want to answer:
+
+| Reader's question | Starting point |
+|---|---|
+| What is the task, and what is proved? | [Scientific account](science/README.md) and [exact model](science/model.md) |
+| How does a stored operation become a composed program? | [Worked tutorial](learning/TUTORIAL.md) |
+| Which foundations connect to the proofs? | [Watrous bridge](learning/WATROUS_BRIDGE.md) |
+| How do the ideas fit into one learning route? | [Learning guide](learning/README.md) and [30 milestones](learning/MILESTONES.md) |
+| How can I reproduce the finite checks? | [Verification guide](verification/README.md) |
+
+The single educational anchor is John Watrous's *The Theory of Quantum Information* (2018). The bridge identifies relevant sections and translates the Choi normalization and fidelity conventions. The specialist proofs remain in the scientific account.
 
 From the repository root, with Python 3.11 or later:
 

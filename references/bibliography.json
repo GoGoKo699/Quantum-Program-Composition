@@ -307,6 +307,34 @@
         "https://github.com/GoGoKo699/Quantum-Coherent-Collisions/blob/219f590010247124f48feffaf244a60f306335f4/science/model.md",
         "https://github.com/GoGoKo699/Quantum-Coherent-Collisions/blob/219f590010247124f48feffaf244a60f306335f4/science/coherent_extraction.md"
       ]
+    },
+    {
+      "id": "watrous2018",
+      "type": "book",
+      "authors": [
+        "John Watrous"
+      ],
+      "title": "The Theory of Quantum Information",
+      "year": 2018,
+      "publisher": "Cambridge University Press",
+      "url": "https://cs.uwaterloo.ca/~watrous/TQI/",
+      "source_version": "Author-hosted 2018 prepublication manuscript; front matter dated January 2018, published book April 2018.",
+      "inspected_locations": [
+        "Section 1.1.3",
+        "Section 2.2.2",
+        "Section 3.1.1",
+        "Section 3.2.1",
+        "Section 6.3.1",
+        "Sections 7.1-7.2"
+      ],
+      "role": "Single educational anchor for channel representations, state comparison, teleportation and symmetry. The project bridge converts unnormalized Choi operators and unsquared fidelity and identifies additional research-level dependencies.",
+      "primary_sources": [
+        "https://cs.uwaterloo.ca/~watrous/TQI/",
+        "https://cs.uwaterloo.ca/~watrous/TQI/TQI.frontmatter.pdf",
+        "https://cs.uwaterloo.ca/~watrous/TQI/TQI.2.pdf",
+        "https://cs.uwaterloo.ca/~watrous/TQI/TQI.3.pdf",
+        "https://cs.uwaterloo.ca/~watrous/TQI/TQI.7.pdf"
+      ]
     }
   ]
 }
