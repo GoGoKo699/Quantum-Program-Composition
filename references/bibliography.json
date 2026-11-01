@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-01",
+  "scope": "Primary sources for the operational comparisons and mathematical tools in Quantum-Program-Composition. An arXiv version records the inspected preprint; publication metadata refers to the journal or proceedings record.",
+  "entries": [
+    {
+      "id": "wang2020",
+      "type": "journal_article",
+      "authors": ["Dong-Sheng Wang"],
+      "title": "Choi states, symmetry-based quantum gate teleportation, and stored-program quantum computing",
+      "year": 2020,
+      "journal": "Physical Review A",
+      "volume": "101",
+      "article_number": "052311",
+      "doi": "10.1103/PhysRevA.101.052311",
+      "url": "https://doi.org/10.1103/PhysRevA.101.052311",
+      "arxiv": {
+        "id": "1912.05418",
+        "version": "v2",
+        "version_date": "2020-05-07",
+        "url": "https://arxiv.org/abs/1912.05418v2"
+      },
+      "inspected_locations": ["Introduction", "Section II, Equation (3)", "Sections III-IV"],
+      "role": "Choi-program composition, Bell-contraction mechanism, and a deterministic processor whose adjoint correction depends on the encoded program.",
+      "primary_sources": [
+        "https://doi.org/10.1103/PhysRevA.101.052311",
+        "https://arxiv.org/pdf/1912.05418v2"
+      ]
+    },
+    {
+      "id": "liu_wang_liu_wang2023",
+      "type": "journal_article",
+      "authors": ["Yuan-Ting Liu", "Kai Wang", "Yuan-Dong Liu", "Dong-Sheng Wang"],
+      "title": "A Survey of Universal Quantum von Neumann Architecture",
+      "year": 2023,
+      "publication_date": "2023-08-09",
+      "journal": "Entropy",
+      "volume": "25",
+      "issue": "8",
+      "article_number": "1187",
+      "doi": "10.3390/e25081187",
+      "url": "https://doi.org/10.3390/e25081187",
+      "inspected_locations": ["Section 4.4"],
+      "role": "Author account explicitly identifying known-program information as a requirement for the deterministic adjoint correction in the composition scheme.",
+      "primary_sources": [
+        "https://doi.org/10.3390/e25081187",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453143/"
+      ]
+    },
+    {
+      "id": "strelchuk_horodecki_oppenheim2013",
+      "type": "journal_article",
+      "authors": ["Sergii Strelchuk", "Michał Horodecki", "Jonathan Oppenheim"],
+      "title": "Generalized Teleportation and Entanglement Recycling",
+      "year": 2013,
+      "publication_date": "2013-01-04",
+      "journal": "Physical Review Letters",
+      "volume": "110",
+      "article_number": "010505",
+      "doi": "10.1103/PhysRevLett.110.010505",
+      "url": "https://doi.org/10.1103/PhysRevLett.110.010505",
+      "arxiv": {
+        "id": "1209.2683",
+        "version": "v2",
+        "version_date": "2012-12-13",
+        "url": "https://arxiv.org/abs/1209.2683v2"
+      },
+      "inspected_locations": ["Lemma 1", "Supplement, Section 1", "Recycling and bulk-teleportation results"],
+      "role": "Square-root measurement, signal-purity bounds, and preservation of residual ports in generalized teleportation.",
+      "metadata_note": "The original article number is 010505. The arXiv journal-reference field lists 069902, which belongs to the separate 2013 Publisher's Note. Both publisher's notes listed below concern acknowledgments or funding information.",
+      "related_records": ["strelchuk_horodecki_oppenheim2013_note", "strelchuk_horodecki_oppenheim2014_note"],
+      "primary_sources": [
+        "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.010505",
+        "https://arxiv.org/pdf/1209.2683v2"
+      ]
+    },
+    {
+      "id": "strelchuk_horodecki_oppenheim2013_note",
+      "type": "publisher_note",
+      "authors": ["Sergii Strelchuk", "Michał Horodecki", "Jonathan Oppenheim"],
+      "title": "Publisher's Note: Generalized Teleportation and Entanglement Recycling [Phys. Rev. Lett. 110, 010505 (2013)]",
+      "year": 2013,
+      "publication_date": "2013-02-07",
+      "journal": "Physical Review Letters",
+      "volume": "110",
+      "article_number": "069902",
+      "doi": "10.1103/PhysRevLett.110.069902",
+      "url": "https://doi.org/10.1103/PhysRevLett.110.069902",
+      "related_to": "strelchuk_horodecki_oppenheim2013",
+      "correction_scope": "Adds omitted acknowledgments and funding information; does not change a scientific statement or equation.",
+      "primary_sources": [
+        "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.110.069902"
+      ]
+    },
+    {
+      "id": "strelchuk_horodecki_oppenheim2014_note",
+      "type": "publisher_note",
+      "authors": ["Sergii Strelchuk", "Michał Horodecki", "Jonathan Oppenheim"],
+      "title": "Publisher's Note: Generalized Teleportation and Entanglement Recycling [Phys. Rev. Lett. 110, 010505 (2013)]",
+      "year": 2014,
+      "publication_date": "2014-03-26",
+      "journal": "Physical Review Letters",
+      "volume": "112",
+      "article_number": "129901",
+      "doi": "10.1103/PhysRevLett.112.129901",
+      "url": "https://doi.org/10.1103/PhysRevLett.112.129901",
+      "related_to": "strelchuk_horodecki_oppenheim2013",
+      "correction_scope": "Corrects a funding acknowledgment for Michał Horodecki; does not change a scientific statement or equation.",
+      "primary_sources": [
+        "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.112.129901"
+      ]
+    },
+    {
+      "id": "grosshans_etal2026",
+      "type": "journal_article",
+      "authors": ["Frédéric Grosshans", "Michał Horodecki", "Mio Murao", "Tomasz Młynik", "Marco Túlio Quintino", "Michał Studziński", "Satoshi Yoshida"],
+      "title": "Multicopy quantum state teleportation with application to storage and retrieval of quantum programs",
+      "year": 2026,
+      "publication_date": "2026-05-13",
+      "journal": "Quantum",
+      "volume": "10",
+      "article_number": "2105",
+      "doi": "10.22331/q-2026-05-13-2105",
+      "url": "https://quantum-journal.org/papers/q-2026-05-13-2105/",
+      "arxiv": {
+        "id": "2409.10393",
+        "version": "v2",
+        "version_date": "2026-04-27",
+        "url": "https://arxiv.org/abs/2409.10393v2"
+      },
+      "inspected_locations": ["Sections 2-3", "Section 6"],
+      "role": "Exact teleportation of an unknown pure state using multiple input copies and one shared maximally entangled pair, with no receiver correction; program-retrieval application and a proposed multiple-port extension.",
+      "primary_sources": [
+        "https://quantum-journal.org/papers/q-2026-05-13-2105/",
+        "https://arxiv.org/html/2409.10393v2"
+      ]
+    },
+    {
+      "id": "kopszak_etal2026",
+      "type": "journal_article",
+      "authors": ["Piotr Kopszak", "Dmitry Grinko", "Adam Burchardt", "Maris Ozols", "Michał Studziński", "Marek Mozrzymas"],
+      "title": "Entanglement Recycling in Two-Step Port-Based Teleportation",
+      "year": 2026,
+      "publication_month": "2026-04",
+      "journal": "IEEE Transactions on Information Theory",
+      "volume": "72",
+      "issue": "4",
+      "pages": "2343-2357",
+      "doi": "10.1109/TIT.2026.3656762",
+      "url": "https://doi.org/10.1109/TIT.2026.3656762",
+      "arxiv": {
+        "id": "2504.00710",
+        "version": "v3",
+        "version_date": "2025-12-08",
+        "url": "https://arxiv.org/abs/2504.00710v3"
+      },
+      "inspected_locations": ["Sections 2 and 7"],
+      "role": "Fidelity and degradation when one port resource is reused for two successive messages, rather than composition of two unknown program sources.",
+      "primary_sources": [
+        "https://doi.org/10.1109/TIT.2026.3656762",
+        "https://arxiv.org/html/2504.00710v3",
+        "https://dare.uva.nl/id/f2180cc6-c285-4230-ac01-d12186dcbd15"
+      ]
+    },
+    {
+      "id": "goncharov2025",
+      "type": "preprint",
+      "authors": ["Yegor Goncharov"],
+      "title": "Traceless projection of mixed tensor products, and walled Brauer algebras",
+      "year": 2025,
+      "doi": "10.48550/arXiv.2511.00303",
+      "url": "https://arxiv.org/abs/2511.00303v1",
+      "arxiv": {
+        "id": "2511.00303",
+        "version": "v1",
+        "version_date": "2025-10-31",
+        "url": "https://arxiv.org/abs/2511.00303v1"
+      },
+      "inspected_locations": ["Theorem 2.3", "Proposition 2.4"],
+      "role": "Mixed traceless projection and its centrality in the represented algebra, including positive local dimensions outside the faithful stable range.",
+      "primary_sources": ["https://arxiv.org/html/2511.00303v1"]
+    },
+    {
+      "id": "grinko_ozols2024",
+      "type": "journal_article",
+      "authors": ["Dmitry Grinko", "Maris Ozols"],
+      "title": "Linear Programming with Unitary-Equivariant Constraints",
+      "year": 2024,
+      "publication_date": "2024-11-06",
+      "journal": "Communications in Mathematical Physics",
+      "volume": "405",
+      "article_number": "278",
+      "doi": "10.1007/s00220-024-05108-1",
+      "url": "https://link.springer.com/article/10.1007/s00220-024-05108-1",
+      "arxiv": {
+        "id": "2207.05713",
+        "version": "v2",
+        "version_date": "2023-04-04",
+        "url": "https://arxiv.org/abs/2207.05713v2"
+      },
+      "inspected_locations": ["Sections 3.2-3.4", "Theorem 3.8"],
+      "role": "Mixed Schur-Weyl mutual centralizers. The represented centralizer equality holds in all dimensions; the stable-dimension hypothesis is needed for faithfulness of the abstract algebra representation.",
+      "primary_sources": [
+        "https://link.springer.com/article/10.1007/s00220-024-05108-1",
+        "https://arxiv.org/abs/2207.05713v2"
+      ]
+    },
+    {
+      "id": "gilyen_su_low_wiebe2019",
+      "type": "conference_paper",
+      "authors": ["András Gilyén", "Yuan Su", "Guang Hao Low", "Nathan Wiebe"],
+      "title": "Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics",
+      "year": 2019,
+      "booktitle": "Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing",
+      "conference": "STOC 2019",
+      "pages": "193-204",
+      "doi": "10.1145/3313276.3316366",
+      "url": "https://doi.org/10.1145/3313276.3316366",
+      "arxiv": {
+        "id": "1806.01838",
+        "version": "v1",
+        "version_date": "2018-06-05",
+        "url": "https://arxiv.org/abs/1806.01838v1"
+      },
+      "role": "Projected-unitary quantum singular value transformation and polynomial approximation tools for the polar-map implementation.",
+      "primary_sources": [
+        "https://doi.org/10.1145/3313276.3316366",
+        "https://arxiv.org/pdf/1806.01838v1",
+        "https://yuansu.me/publication/qsvt/"
+      ]
+    },
+    {
+      "id": "hausladen_wootters1994",
+      "type": "journal_article",
+      "authors": ["Paul Hausladen", "William K. Wootters"],
+      "title": "A ‘Pretty Good’ Measurement for Distinguishing Quantum States",
+      "year": 1994,
+      "journal": "Journal of Modern Optics",
+      "volume": "41",
+      "issue": "12",
+      "pages": "2385-2390",
+      "doi": "10.1080/09500349414552221",
+      "url": "https://doi.org/10.1080/09500349414552221",
+      "role": "The generic pretty-good measurement prescription; no claim that this measurement is optimal for an arbitrary ensemble.",
+      "metadata_note": "The journal issue is from 1994; the publisher's later online-posting date is not the publication year used here.",
+      "primary_sources": ["https://www.tandfonline.com/doi/abs/10.1080/09500349414552221"]
+    },
+    {
+      "id": "collins_sniady2006",
+      "type": "journal_article",
+      "authors": ["Benoît Collins", "Piotr Śniady"],
+      "title": "Integration with respect to the Haar measure on unitary, orthogonal and symplectic group",
+      "year": 2006,
+      "journal": "Communications in Mathematical Physics",
+      "volume": "264",
+      "issue": "3",
+      "pages": "773-795",
+      "doi": "10.1007/s00220-006-1554-3",
+      "url": "https://doi.org/10.1007/s00220-006-1554-3",
+      "arxiv": {
+        "id": "math-ph/0402073",
+        "version": "v1",
+        "version_date": "2004-02-26",
+        "url": "https://arxiv.org/abs/math-ph/0402073v1"
+      },
+      "role": "Haar integration and Weingarten formulas supporting the independent finite moment checks.",
+      "primary_sources": [
+        "https://doi.org/10.1007/s00220-006-1554-3",
+        "https://arxiv.org/abs/math-ph/0402073v1"
+      ]
+    },
+    {
+      "id": "dawson_nielsen2006",
+      "type": "journal_article",
+      "authors": ["Christopher M. Dawson", "Michael A. Nielsen"],
+      "title": "The Solovay-Kitaev algorithm",
+      "year": 2006,
+      "journal": "Quantum Information and Computation",
+      "volume": "6",
+      "issue": "1",
+      "pages": "81-95",
+      "doi": "10.26421/QIC6.1-6",
+      "url": "https://www.rintonpress.com/journals/doi/QIC6.1-6.html",
+      "arxiv": {
+        "id": "quant-ph/0505030",
+        "version": "v2",
+        "version_date": "2005-08-23",
+        "url": "https://arxiv.org/abs/quant-ph/0505030v2"
+      },
+      "role": "Compilation of known fixed-dimensional gates over a fixed finite universal gate set with polylogarithmic precision overhead, under the theorem's gate-set assumptions.",
+      "primary_sources": [
+        "https://www.rintonpress.com/journals/doi/QIC6.1-6.html",
+        "https://arxiv.org/abs/quant-ph/0505030v2"
+      ]
+    },
+    {
+      "id": "quantum_coherent_collisions",
+      "type": "research_repository",
+      "title": "Quantum Coherent Collisions",
+      "repository_owner": "GoGoKo699",
+      "repository": "GoGoKo699/Quantum-Coherent-Collisions",
+      "revision": "219f590010247124f48feffaf244a60f306335f4",
+      "url": "https://github.com/GoGoKo699/Quantum-Coherent-Collisions/tree/219f590010247124f48feffaf244a60f306335f4",
+      "inspected_locations": ["science/model.md", "science/coherent_extraction.md"],
+      "role": "Public scientific antecedent for collective-copy extraction of pointwise amplitude powers, occupation correction, and factorization of an accepted residual. It is a repository record, not a journal article.",
+      "primary_sources": [
+        "https://github.com/GoGoKo699/Quantum-Coherent-Collisions/blob/219f590010247124f48feffaf244a60f306335f4/science/model.md",
+        "https://github.com/GoGoKo699/Quantum-Coherent-Collisions/blob/219f590010247124f48feffaf244a60f306335f4/science/coherent_extraction.md"
+      ]
+    }
+  ]
+}
