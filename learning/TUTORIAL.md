@@ -43,13 +43,13 @@ output target here.
 
 **Milestones M06–M08 and M14.** Take $d=2$ and, for a worked example, choose
 
-$
+$$
 H|0\rangle=\frac{|0\rangle+|1\rangle}{\sqrt2},\qquad H|1\rangle=\frac{|0\rangle-|1\rangle}{\sqrt2}.
-$
+$$
 
-$
+$$
 S|0\rangle=|0\rangle,\qquad S|1\rangle=i|1\rangle.
-$
+$$
 
 Their programs are
 
