@@ -70,7 +70,7 @@ These maps form a valid incomplete instrument on the entire ordered input space,
 $$
 \sum_{r,s}J_{rs}^{\dagger}J_{rs}
 =G^{-1/2}\left(d\sum_{r,s}E_{rs}\right)G^{-1/2}
-=\Pi_{\operatorname{supp}G}\leq I.
+=\Pi_{\mathrm{supp}G}\leq I.
 \tag{5}
 $$
 
@@ -78,7 +78,7 @@ On the complementary effect, discard the input and prepare any fixed normalized 
 
 $$
 \mathcal E(\rho)=\sum_{r,s}J_{rs}\rho J_{rs}^{\dagger}
- +\operatorname{Tr}\!\left[(I-\Pi_{\operatorname{supp}G})\rho\right]\sigma_0.
+ +\mathrm{Tr}\!\left[(I-\Pi_{\mathrm{supp}G})\rho\right]\sigma_0.
 \tag{6}
 $$
 
@@ -105,8 +105,8 @@ The square-root measurement is established machinery [1]. Its use in port-based 
 The input belongs to the known subspace
 
 $$
-\mathcal S=\operatorname{Sym}^{m}(\mathbb C^{d^2})
-          \otimes\operatorname{Sym}^{n}(\mathbb C^{d^2}),
+\mathcal S=\mathrm{Sym}^{m}(\mathbb C^{d^2})
+          \otimes\mathrm{Sym}^{n}(\mathbb C^{d^2}),
 $$
 
 where the symmetrization permutes **whole two-register copies** within each pool. Let $P$ be its orthogonal projector. The sum $G$ commutes with these permutations and therefore preserves $\mathcal S$. After the common routing convention, symmetry also gives
@@ -154,7 +154,7 @@ Mv=\sqrt\mu\,w,
 \tag{10}
 $$
 
-Let $K=MG_{\mathcal S}^{-1/2}$ be the polar partial isometry, zero on the kernel. It is a contraction, with $K^{\dagger}K=\Pi_{\operatorname{supp}G_{\mathcal S}}$. Since $G^{-1/2}$ preserves $\mathcal S$, every routed physical branch satisfies
+Let $K=MG_{\mathcal S}^{-1/2}$ be the polar partial isometry, zero on the kernel. It is a contraction, with $K^{\dagger}K=\Pi_{\mathrm{supp}G_{\mathcal S}}$. Since $G^{-1/2}$ preserves $\mathcal S$, every routed physical branch satisfies
 
 $$
 J_{rs}v=\frac1{\sqrt{mn}}Kv.
@@ -177,7 +177,7 @@ Every inner half of a unitary Choi state is maximally mixed. Since the supplied 
 
 $$
 \langle v|h(G)|v\rangle
-=\frac{\operatorname{Tr}_{\mathrm{inner}}h(G)}{d^{m+n}}.
+=\frac{\mathrm{Tr}_{\mathrm{inner}}h(G)}{d^{m+n}}.
 \tag{13}
 $$
 
@@ -201,7 +201,7 @@ $$
 \begin{aligned}
 \mathbb E G&=\frac{mn}{d}=\mu,\\
 \mathbb E G^2&=mn+\frac{m^2n^2-mn}{d^2},\\
-\operatorname{Var}G&=mn(1-d^{-2}).
+\mathrm{Var}G&=mn(1-d^{-2}).
 \end{aligned}
 \tag{15}
 $$
@@ -240,8 +240,8 @@ The failure term in (6) adds a nonnegative target overlap, so $F_{\mathrm{global
 The success probability of the incomplete instrument is
 
 $$
-p=\langle v|\Pi_{\operatorname{supp}G}|v\rangle
-=\frac{\operatorname{rank}G}{d^{m+n}}
+p=\langle v|\Pi_{\mathrm{supp}G}|v\rangle
+=\frac{\mathrm{rank}G}{d^{m+n}}
 \geq\frac{(\mathbb E G)^2}{\mathbb E G^2}
 =\frac1{1+r}.
 \tag{18}

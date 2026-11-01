@@ -27,8 +27,8 @@ $$
 Each Choi program has a row register and a column register. All copies occupy distinct, ordered physical registers. Define $P$ to be the orthogonal projector onto
 
 $$
-\mathcal S=\operatorname{Sym}^{m}(\mathbb C^{d^2})
-\otimes\operatorname{Sym}^{n}(\mathbb C^{d^2}).
+\mathcal S=\mathrm{Sym}^{m}(\mathbb C^{d^2})
+\otimes\mathrm{Sym}^{n}(\mathbb C^{d^2}).
 $$
 
 The permutations defining $P$ exchange **whole two-register programs**. In particular, $P|v\rangle=|v\rangle$ for every pair $U,V$. No occupation-number encoding or bosonic hardware is assumed.
@@ -45,7 +45,7 @@ $$
 A=BP=JQP.
 $$
 
-Before applying $J$, the triple $(Q,I,P)$ is a projected unitary encoding: the encoded operator is $QP$, between the right subspace $\mathcal S$ and the left subspace $\operatorname{range}Q$. Both projectors are known from $d,m,n$.
+Before applying $J$, the triple $(Q,I,P)$ is a projected unitary encoding: the encoded operator is $QP$, between the right subspace $\mathcal S$ and the left subspace $\mathrm{range}Q$. Both projectors are known from $d,m,n$.
 
 The Bell contraction gives the exact physical normalization
 
@@ -90,7 +90,7 @@ The [moment calculation](construction.md) gives, for the spectral distribution o
 $$
 \mu=\mathbb E G=\frac{mn}{d},
 \qquad
-\operatorname{Var}(G)=mn(1-d^{-2}).
+\mathrm{Var}(G)=mn(1-d^{-2}).
 $$
 
 Define

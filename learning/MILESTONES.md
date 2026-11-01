@@ -17,7 +17,7 @@ Thirteen background targets are needed because this project joins matrix multipl
 
 Three source conventions matter throughout:
 
-- Watrous writes vectors and adjoints as $u$ and $A^*$. The science pages also use $\lvert u\rangle$ and $A^\dagger$. The normalized program is $\operatorname{vec}(U)/\sqrt d$; the normalized Choi density is the channel's Choi operator divided by $d$.
+- Watrous writes vectors and adjoints as $u$ and $A^*$. The science pages also use $\lvert u\rangle$ and $A^\dagger$. The normalized program is $\mathrm{vec}(U)/\sqrt d$; the normalized Choi density is the channel's Choi operator divided by $d$.
 - Watrous's fidelity in §3.2 is the root convention. Here $F(\rho,w)=\langle w\rvert\rho\lvert w\rangle$ is its square for a normalized pure target. A success probability and a conditional fidelity are separate quantities.
 - Anchor pointers provide foundations. The mixed-tensor ingredients, two-pool derivations, QSVT and compilation results are supplied or cited in the scientific pages. Those primary research sources remain proof dependencies, not additional educational anchors. Projector symbols are local to each proof: whole-copy symmetry in the construction and the harmonic projector in the converse are different objects.
 
@@ -58,7 +58,7 @@ Three source conventions matter throughout:
 ### M05 — Vectorization and normalized Choi programs
 
 - **Central question:** How can a matrix be represented by a bipartite quantum state without supplying its classical entries?
-- **Understanding target:** Identify the row and column registers in $\lvert U\rangle=\operatorname{vec}(U)/\sqrt d$, account for normalization, and relate this vector to the Choi representation of a unitary channel. Distinguish possessing the state from possessing an executable gate or a matrix description.
+- **Understanding target:** Identify the row and column registers in $\lvert U\rangle=\mathrm{vec}(U)/\sqrt d$, account for normalization, and relate this vector to the Choi representation of a unitary channel. Distinguish possessing the state from possessing an executable gate or a matrix description.
 - **Dependencies and story role:** M02–M04. Turns the abstract matrix product into a state-conversion problem with explicit physical input specimens.
 - **Conceptual connection:** The same matrix indices that describe composition become quantum registers; the processor must eliminate the shared index while retaining coherence.
 - **Sources:** [Watrous §§1.1.2][w112] and [2.2.2][w222]; [program definition](../science/model.md#programs-inputs-and-outputs), [composition and execution](../science/interpretation.md#program-composition-and-program-execution).
@@ -90,7 +90,7 @@ Three source conventions matter throughout:
 ### M09 — Trace distance and operational distinguishability
 
 - **Central question:** How does closeness of two input ensembles limit every possible measurement strategy?
-- **Understanding target:** Interpret $\operatorname{TD}(\rho,\sigma)=\tfrac12\lVert\rho-\sigma\rVert_1$ as the maximum difference between the probabilities of a measurement event. Explain why physical processing followed by a test cannot create a larger distinguishing advantage than was available in the input states.
+- **Understanding target:** Interpret $\mathrm{TD}(\rho,\sigma)=\tfrac12\lVert\rho-\sigma\rVert_1$ as the maximum difference between the probabilities of a measurement event. Explain why physical processing followed by a test cannot create a larger distinguishing advantage than was available in the input states.
 - **Dependencies and story role:** M02, M07. Introduces the operational measure used to constrain arbitrary composers, complementing the fidelity measure used to certify an output.
 - **Conceptual connection:** A lower bound can follow from a task reduction: an accurate composer would enable a discrimination experiment forbidden by the supplied information.
 - **Sources:** [Watrous §3.1.1][w311]; [moment comparison](../science/converse.md#1-correlated-programs-and-independent-programs), [composer-to-test reduction](../science/converse.md#2-turning-a-composer-into-a-correlation-test).
@@ -196,7 +196,7 @@ Three source conventions matter throughout:
 ### M22 — Ordered compressed moments limit distinguishability
 
 - **Central question:** How does the common harmonic structure yield a quantitative trace-distance bound?
-- **Understanding target:** Explain the common positive blocks of the compressed moments, their ordering $A\succeq B$, and the control of their missing masses. Connect these facts to $\operatorname{TD}(\Omega_{\rm c},\Omega_{\rm i})\leq\min\{1,2mn/d^2\}$. Distinguish commutation of an averaged moment with the compression from invariance of the harmonic subspace under every independent group element.
+- **Understanding target:** Explain the common positive blocks of the compressed moments, their ordering $A\succeq B$, and the control of their missing masses. Connect these facts to $\mathrm{TD}(\Omega_{\rm c},\Omega_{\rm i})\leq\min\{1,2mn/d^2\}$. Distinguish commutation of an averaged moment with the compression from invariance of the harmonic subspace under every independent group element.
 - **Dependencies and story role:** M09–M10, M20–M21. Converts representation structure and dimension counting into an operational information bound.
 - **Conceptual connection:** The independent moment's block structure is essential; pretending its underlying representation preserves the harmonic subspace would omit a load-bearing step.
 - **Sources:** [Watrous §§1.1.3][w113], [3.1.1][w311] and [7.2.2][w722] for norms, discrimination and invariant averages; [ordered compressed moments](../science/converse.md#13-the-two-harmonic-moment-blocks-are-ordered).

@@ -72,9 +72,9 @@ $|\overline U\rangle$.
 **Moment comparison.** For every $d\geq2$ and $m,n\geq1$,
 
 $$
-\operatorname{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
+\mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
 :=\frac12\|\Omega_{\mathrm c}-\Omega_{\mathrm i}\|_1
-\leq\min\left\{1,\frac{2mn}{d^2}\right\}.
+\leq\min\{1,\frac{2mn}{d^2}\}.
 \tag{3}
 $$
 
@@ -240,20 +240,20 @@ Consequently,
 $$
 A\succeq B,
 \qquad
-\operatorname{tr}A=\frac1D\sum_a f_aw_a=1-q.
+\mathrm{tr}A=\frac1D\sum_a f_aw_a=1-q.
 \tag{11}
 $$
 
 Moreover, using $w^2/v\geq2w-v$,
 
 $$
-\operatorname{tr}B
+\mathrm{tr}B
 =\frac1D\sum_a\frac{f_aw_a^2}{v_a}
 \geq1-2q.
 \tag{12}
 $$
 
-Let $\delta=\operatorname{tr}(A-B)$. Equations (11)–(12) give
+Let $\delta=\mathrm{tr}(A-B)$. Equations (11)–(12) give
 $0\leq\delta\leq q$. Block diagonality implies that
 $\Omega_{\mathrm c}-A$ and $\Omega_{\mathrm i}-B$ are positive, with traces
 $q$ and $q+\delta$. The triangle inequality therefore gives
@@ -326,7 +326,7 @@ gives
 
 $$
 p\left(F-\frac1{d^2}\right)
-\leq\operatorname{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
+\leq\mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
 \leq\frac{2mn}{d^2}.
 \tag{16}
 $$
@@ -378,7 +378,7 @@ $d=2,(m,n)=(1,3)$ and $(2,2)$, where $m+n>d$. In the one-copy case it also
 checks the analytic calibration
 
 $$
-\operatorname{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
+\mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
 =\frac{2(d^2-1)}{d^4}\qquad(m=n=1).
 $$
 

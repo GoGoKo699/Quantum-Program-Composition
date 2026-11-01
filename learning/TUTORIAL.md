@@ -131,7 +131,7 @@ J_{rs}=\sqrt d\,L_{rs}G^{-1/2}.
 $$
 
 The inverse vanishes on the kernel. These operators satisfy
-$\sum_{r,s}J_{rs}^\dagger J_{rs}=\Pi_{\operatorname{supp}G}\leq I$.
+$\sum_{r,s}J_{rs}^\dagger J_{rs}=\Pi_{\mathrm{supp}G}\leq I$.
 Adding a failure outcome gives a complete physical instrument. Its
 square-root normalization is the pretty-good measurement construction;
 [the source bridge](WATROUS_BRIDGE.md) relates it to Watrous §3.1.2.
@@ -153,7 +153,7 @@ spectral distribution of $G$ on the supplied state has moments
 $$
 \mathbb E G=\frac{mn}{d},
 \qquad
-\operatorname{Var}(G)=mn(1-d^{-2}).
+\mathrm{Var}(G)=mn(1-d^{-2}).
 $$
 
 The relative variance $r=(d^2-1)/(mn)$ controls the distortion from the
@@ -208,7 +208,7 @@ makes its projector central, which permits an ordered comparison of the
 two averaged Choi states. The result is
 
 $$
-\operatorname{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
+\mathrm{TD}(\Omega_{\mathrm c},\Omega_{\mathrm i})
 \leq\frac{2mn}{d^2}.
 $$
 

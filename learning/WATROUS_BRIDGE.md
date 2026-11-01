@@ -35,26 +35,26 @@ There is no need to read the whole book before approaching the project.
 ### A Choi operator becomes a physical state only after normalization
 
 Watrous defines the Choi representation in §2.2.2, equations (2.64)–(2.65),
-using the unnormalized vector $\operatorname{vec}(I)$. For a channel
+using the unnormalized vector $\mathrm{vec}(I)$. For a channel
 $\mathcal E$ with d-dimensional input,
 
 $$
 J(\mathcal E)
-=(\mathcal E\otimes\operatorname{id})
-  \bigl(\operatorname{vec}(I)\operatorname{vec}(I)^\dagger\bigr),
+=(\mathcal E\otimes\mathrm{id})
+  \bigl(\mathrm{vec}(I)\mathrm{vec}(I)^\dagger\bigr),
 \qquad
-\operatorname{Tr}J(\mathcal E)=d.
+\mathrm{Tr}J(\mathcal E)=d.
 $$
 
 The normalized Choi state is therefore $\omega_{\mathcal E}=J(\mathcal E)/d$.
 For the unitary channel $\mathcal U(X)=UXU^\dagger$,
 
 $$
-J(\mathcal U)=\operatorname{vec}(U)\operatorname{vec}(U)^\dagger,
+J(\mathcal U)=\mathrm{vec}(U)\mathrm{vec}(U)^\dagger,
 \qquad
 \omega_{\mathcal U}=|U\rangle\langle U|,
 \qquad
-|U\rangle=\frac{\operatorname{vec}(U)}{\sqrt d}.
+|U\rangle=\frac{\mathrm{vec}(U)}{\sqrt d}.
 $$
 
 The tensor order is output followed by input, matching this project's
@@ -109,8 +109,8 @@ In §7.1.1, take one textbook tensor factor to be an **entire two-register
 program**, of dimension $d^2$. The relevant input subspace is
 
 $$
-\operatorname{Sym}^m(\mathbb C^{d^2})
-\otimes\operatorname{Sym}^n(\mathbb C^{d^2}).
+\mathrm{Sym}^m(\mathbb C^{d^2})
+\otimes\mathrm{Sym}^n(\mathbb C^{d^2}).
 $$
 
 Permuting only one half changes which registers are paired and need not

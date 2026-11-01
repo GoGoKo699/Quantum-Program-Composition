@@ -89,7 +89,7 @@ Let $F^*_{\mathrm{out}}(d,m,n)$ denote the best worst-case fidelity of a determi
 $$
 \frac{mn}{mn+d^2-1}
 \leq F^*_{\mathrm{out}}(d,m,n)
-\leq\min\left\{1,\frac{2mn+1}{d^2}\right\}.
+\leq\min\{1,\frac{2mn+1}{d^2}\}.
 \tag{6}
 $$
 
