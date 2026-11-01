@@ -1,0 +1,16 @@
+# Quantum Program Composition
+
+Question: What is the optimal copy cost of producing a Choi program for UV from copies of the programs for unknown U and V?
+
+Entry: README.md
+Scientific reading route: science/README.md
+Definitions, exact claims, resources and optimality: science/model.md
+Physical instrument, PGM and global returned-program fidelity: science/construction.md
+All-dimensional mixed-moment comparison and universal converse: science/converse.md
+Projected QSVT, known symmetry phases and charged gate costs: science/implementation.md
+Meaning, precision alternatives and limitations: science/interpretation.md
+Closest work and inherited ingredients: references/RELATED_WORK.md
+Structured source metadata: references/bibliography.json
+Reproduction commands and tested limits: verification/README.md
+
+Essential distinctions: Fidelity is pure-target overlap (squared convention). Inputs are complete pure unitary Choi copies; no unknown-unitary query or preparation oracle is supplied. The main theorem is a bounded-copy, constant-error resource law. The output is a program state, not application to fresh data. Global approximate program return does not establish indefinite reuse. Copy complexity and known-gate complexity are distinct.
