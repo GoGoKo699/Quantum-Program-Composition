@@ -59,3 +59,9 @@ The test distinguishes the restricted Bell block from the unrestricted binary-sp
 ## What these checks do not establish
 
 Finite floating-point calculations do not prove the asymptotic lower bound, certify novelty, or establish optimal small-error dependence. The circuit test does not synthesize an entire QSVT phase sequence or simulate fault-tolerant gates. Polynomial approximation, phase construction and gate synthesis use the cited primary theorems. The public proof explains their hypotheses and how the program inputs meet them.
+
+## Hosted mathematical display
+
+The separate [hosted review](hosted/README.md) visits commit-pinned GitHub pages in a fresh browser, compares the rendered mathematics with the tracked source, and saves wide and narrow screenshots. Its read-only workflow uses public pages and temporary dependencies. The report records the exact revision, page scope and expression counts, including inline formulas and table cells.
+
+This display check requires network access. It supplements the finite scientific checks above: matching MathML structure does not establish a proof, and screenshots still need inspection for legibility and navigation. The hosted guide documents the command, dependency versions and report files.

@@ -4,8 +4,10 @@ The [collective construction](construction.md) defines a processor by the polar 
 
 At global infidelity $\epsilon$, the circuit achieves the target using a copy-budget product $mn=O(d^2/\epsilon)$, chosen with the sufficient constant in (7), and uses
 
+**Equation (1).**
+
 $$
-\widetilde O\!\left(
+\widetilde O\left(
  d(m^2+n^2)(\log d+\log(m+n))
 \right)
 $$
@@ -27,8 +29,8 @@ $$
 Each Choi program has a row register and a column register. All copies occupy distinct, ordered physical registers. Define $P$ to be the orthogonal projector onto
 
 $$
-\mathcal S=\operatorname{Sym}^{m}(\mathbb C^{d^2})
-\otimes\operatorname{Sym}^{n}(\mathbb C^{d^2}).
+\mathcal S=\mathrm{Sym}^{m}(\mathbb C^{d^2})
+\otimes\mathrm{Sym}^{n}(\mathbb C^{d^2}).
 $$
 
 The permutations defining $P$ exchange **whole two-register programs**. In particular, $P|v\rangle=|v\rangle$ for every pair $U,V$. No occupation-number encoding or bosonic hardware is assumed.
@@ -45,16 +47,17 @@ $$
 A=BP=JQP.
 $$
 
-Before applying $J$, the triple $(Q,I,P)$ is a projected unitary encoding: the encoded operator is $QP$, between the right subspace $\mathcal S$ and the left subspace $\operatorname{range}Q$. Both projectors are known from $d,m,n$.
+Before applying $J$, the triple $(Q,I,P)$ is a projected unitary encoding: the encoded operator is $QP$, between the right subspace $\mathcal S$ and the left subspace $\mathrm{range}Q$. Both projectors are known from $d,m,n$.
 
 The Bell contraction gives the exact physical normalization
 
 $$
 A|v\rangle=\frac1d|w\rangle.
-\tag{1}
 $$
 
-For comparison with the [polar construction](construction.md), set $M=\sqrt{dmn}\,A$ on $\mathcal S$. Thus
+For comparison with the [polar construction](construction.md), set $M=\sqrt{dmn}A$ on $\mathcal S$. Thus
+
+**Equation (2).**
 
 $$
 M|v\rangle=\sqrt{\frac{mn}{d}}|w\rangle.
@@ -78,19 +81,20 @@ G=d\sum_{r,s}E_{rs},
 M^\dagger M=G_{\mathcal S},
 \qquad
 A^\dagger A=\frac{G_{\mathcal S}}{dmn}.
-\tag{2}
 $$
 
-Equation (2) also proves $\|A\|\leq1$ and $\|M\|\leq\sqrt{dmn}$. The relevant singular spectrum is that of the **restricted block** $QP$. The unrestricted Bell projector has only zero and unit singular values and cannot by itself implement this polar transformation.
+Equation (2) also proves $\VertA\Vert\leq1$ and $\VertM\Vert\leq\sqrt{dmn}$. The relevant singular spectrum is that of the **restricted block** $QP$. The unrestricted Bell projector has only zero and unit singular values and cannot by itself implement this polar transformation.
 
 ## 2. Approximating the polar map on the supplied states
 
 The [moment calculation](construction.md) gives, for the spectral distribution of $G$ in $|v\rangle$,
 
+**Equation (3).**
+
 $$
 \mu=\mathbb E G=\frac{mn}{d},
 \qquad
-\operatorname{Var}(G)=mn(1-d^{-2}).
+\mathrm{Var}(G)=mn(1-d^{-2}).
 $$
 
 Define
@@ -105,12 +109,13 @@ The exact polar Kraus operator is $K=MG_{\mathcal S}^{-1/2}$, with the inverse z
 
 $$
 \langle w|K|v\rangle=\mathbb E\sqrt X\geq1-\frac r2.
-\tag{3}
 $$
 
 For example, the scalar inequality $\sqrt{x}\geq(3x-x^2)/2$ for $x\geq0$ proves (3) using only the first two moments.
 
 A circuit need not approximate the polar map uniformly on arbitrarily small nonzero singular values. Fix $0<\eta<1/2$. The bounded odd sign-approximation polynomial of Gilyén, Su, Low and Wiebe [1, Lemma 25] can be chosen so that
+
+**Equation (4).**
 
 $$
 |f(s)|\leq1\quad(-1\leq s\leq1),
@@ -124,8 +129,7 @@ After removing the Bell ket, the successful Kraus operator is $Jf^{\mathrm{SV}}(
 
 $$
 a_f=\langle w|Jf^{\mathrm{SV}}(QP)|v\rangle
- =\mathbb E\left[\sqrt X\,f\!\left(\frac{\sqrt X}{d}\right)\right].
-\tag{4}
+ =\mathbb E\left[\sqrt Xf\left(\frac{\sqrt X}{d}\right)\right].
 $$
 
 To verify (4), use an SVD $A=L\Sigma R^\dagger$: the identity $|w\rangle=dA|v\rangle$ assigns a factor $d\sigma=\sqrt X$ to the left singular component. An odd polynomial has $f(0)=0$, so zero singular values cause no extra term.
@@ -134,17 +138,18 @@ To verify (4), use an SVD $A=L\Sigma R^\dagger$: the identity $|w\rangle=dA|v\ra
 
 The polynomial approximation applies whenever $X\geq1/4$. Chebyshev's inequality and $\sqrt X\leq1/2$ on the complementary event give
 
+**Equation (5).**
+
 $$
 \Pr[X<1/4]\leq\frac{16r}{9},
 \qquad
-\mathbb E[\sqrt X\,\mathbf1_{X<1/4}]\leq\frac{8r}{9}.
+\mathbb E[\sqrt X\mathbf1_{X<1/4}]\leq\frac{8r}{9}.
 $$
 
 On the large-singular-value event, the amplitude loss relative to (3) is at most $\eta\mathbb E\sqrt X\leq\eta$. On the complementary event, $|f|\leq1$ bounds that loss by twice its weighted mass. Thus
 
 $$
 a_f\geq1-\frac{41r}{18}-\eta.
-\tag{5}
 $$
 
 No minimum-nonzero-singular-value promise was used. The cutoff is justified by the spectral weight of the actual program inputs.
@@ -155,15 +160,18 @@ The QSVT circuit has an explicit success flag: the control qubit is projected ba
 
 Suppose the implemented circuit differs from the ideal QSVT unitary by at most $\nu$ in operator norm. Projection and removal of the Bell ket cannot increase that error. Equations (4) and (5) therefore give
 
+**Equation (6).**
+
 $$
 F_{\mathrm{global}}
 \geq1-\frac{41}{9}r-2\eta-2\nu,
-\tag{6}
 $$
 
 whenever $41r/18+\eta+\nu\leq1$. Here fidelity means the pure-target overlap, as throughout the repository.
 
 A concrete sufficient allocation for any $0<\epsilon<1$ is
+
+**Equation (7).**
 
 $$
 mn\geq\frac{41(d^2-1)}{3\epsilon},
@@ -171,7 +179,6 @@ mn\geq\frac{41(d^2-1)}{3\epsilon},
 \eta\leq\frac\epsilon6,
 \qquad
 \nu\leq\frac\epsilon6.
-\tag{7}
 $$
 
 Then (6) is at least $1-\epsilon$. The constants in (7) describe this cutoff implementation; the exact polar channel satisfies the stronger bound $1/(1+r)\geq1-r$ proved in the construction. Neither statement establishes optimal dependence on $\epsilon\to0$.
@@ -180,10 +187,12 @@ Then (6) is at least $1-\epsilon$. The constants in (7) describe this cutoff imp
 
 It remains to implement the phases required by QSVT without invoking an unknown-state reflection. For a pool of $k$ whole programs, use a Fisher–Yates encoding of permutations. At step $t=2,\ldots,k$, a register $j_t$ ranges uniformly over $0,\ldots,t-1$, and the selected transposition exchanges positions $t-1$ and $j_t$. Every permutation occurs once among the $k!$ valid choice strings.
 
-Let $F_k$ prepare the product of these uniform-range states and let $\mathrm{SELECT}_k$ apply the corresponding whole-copy permutations. Padding labels outside the valid ranges may be assigned any known unitary. They have zero initial amplitude. Define
+Let $F_k$ prepare the product of these uniform-range states and let the known operator `SELECT_k` apply the corresponding whole-copy permutations. Padding labels outside the valid ranges may be assigned any known unitary. They have zero initial amplitude. Define
+
+**Equation (8).**
 
 $$
-V_k=(F_k^\dagger\otimes I)\,\mathrm{SELECT}_k\,(F_k\otimes I).
+V_k=(F_k^\dagger\otimes I)\mathrm{SELECT}_k(F_k\otimes I).
 $$
 
 Its clean-ancilla block is exactly the symmetry projector:
@@ -192,15 +201,15 @@ $$
 (\langle0|\otimes I)V_k(|0\rangle\otimes I)
  =\frac1{k!}\sum_{\pi\in S_k}U_\pi
  =P_k.
-\tag{8}
 $$
 
 For the two pools take $V=V_m\otimes V_n$ and let $\Pi_0$ project all permutation ancillas onto zero. Equation (8) gives
 
+**Equation (9).**
+
 $$
 (\langle0|\otimes I)V^\dagger(2\Pi_0-I)V(|0\rangle\otimes I)
  =2P-I.
-\tag{9}
 $$
 
 The right-hand side is unitary. Since the full operator on the left is also unitary, there can be no norm left in nonzero ancilla states for any clean-ancilla input. Thus (9) is an exact deterministic symmetry reflection with clean ancilla return.
@@ -211,7 +220,7 @@ $$
 V^\dagger e^{i\phi(2\Pi_0-I)}V
 $$
 
-implements $e^{i\phi(2P-I)}$ on clean ancillas. This follows by expanding the exponential into $\cos\phi\,I+i\sin\phi(2\Pi_0-I)$ and using (9). Adding the single QSVT control qubit changes the gate count by a constant factor. The Bell-subspace phases are implemented by preparing and unpreparing the known $|\Phi_d\rangle$ and phasing the all-zero state.
+implements $e^{i\phi(2P-I)}$ on clean ancillas. This follows by expanding the exponential into $\cos\phiI+i\sin\phi(2\Pi_0-I)$ and using (9). Adding the single QSVT control qubit changes the gate count by a constant factor. The Bell-subspace phases are implemented by preparing and unpreparing the known $|\Phi_d\rangle$ and phasing the all-zero state.
 
 ## 5. Charged circuit resources
 
@@ -238,7 +247,7 @@ The resulting resources are:
 | QSVT degree | $O(d\log(1/\epsilon))$ |
 | Complete circuit | $\widetilde O(d(m^2+n^2)(\log d+\log(m+n)))$ gates |
 
-All gate descriptions depend only on $d,m,n,\epsilon$. The polynomial and QSVT phases can be computed classically using the constructive results of [1]; this known preprocessing is separate from the quantum gate count. For a fixed finite inverse-closed universal gate set, approximate each of the $L$ known elementary gates to operator error at most $\nu/L$. A telescoping bound gives total unitary error at most $\nu$. Standard constructive gate synthesis adds a polylogarithmic factor in $L/\nu$ [2], included in the displayed soft-$O$ bounds.
+All gate descriptions depend only on $d,m,n,\epsilon$. The polynomial and QSVT phases can be computed classically using the constructive results of [1]; this known preprocessing is separate from the quantum gate count. For a fixed finite inverse-closed universal gate set, approximate each of the $L$ known elementary gates to operator error at most $\nu/L$. A telescoping bound gives total unitary error at most $\nu$. Standard constructive gate synthesis adds a polylogarithmic factor in $L/\nu$ [2], included in the displayed soft-O bounds.
 
 With $m=n=O(d/\sqrt\epsilon)$ chosen large enough for (7), the circuit uses $\widetilde O(d^3/\epsilon)$ gates and $O((d/\sqrt\epsilon)\log(d/\epsilon))$ qubits. This is polynomial in the dimension and supplied-copy counts. It is not a claim of a gate complexity polynomial in $\log d$.
 

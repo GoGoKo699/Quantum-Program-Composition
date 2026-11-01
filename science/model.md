@@ -8,6 +8,8 @@ This page fixes the model and exact theorem statements. The [construction](const
 
 Let $d\geq2$ and let $U,V\in U(d)$ be arbitrary fixed unitaries. In a fixed computational basis, define the normalized Choi vector
 
+**Equation (1).**
+
 $$
 |U\rangle=(U\otimes I)|\Phi_d\rangle
 =\frac1{\sqrt d}\sum_{i,j=0}^{d-1}U_{ij}|i\rangle|j\rangle,
@@ -37,16 +39,16 @@ $$
 F_{\mathrm{global}}\geq
 \frac{mn}{mn+d^2-1}
 \geq1-\frac{d^2-1}{mn}.
-\tag{1}
 $$
 
 This is an unconditional output guarantee. An intermediate measurement has a successful branch, but the final map also assigns an output on failure. The successful state is generally approximate. The mathematical map is the polar normalization of a known contraction; the [finite circuit](implementation.md) attains the same copy scaling with explicit larger constants and gate-synthesis error.
 
 For $0<\epsilon<1$, the exact channel satisfies $F_{\mathrm{global}}\geq1-\epsilon$ whenever
 
+**Equation (2).**
+
 $$
 mn\geq\frac{1-\epsilon}{\epsilon}(d^2-1).
-\tag{2}
 $$
 
 Equation (2) is a sufficient allocation, not an optimal dependence on a vanishing error parameter. In particular, balanced pools of $O(d/\sqrt\epsilon)$ copies suffice for this construction.
@@ -55,9 +57,10 @@ Equation (2) is a sufficient allocation, not an optimal dependence on a vanishin
 
 Let a quantum instrument use at most $m$ and $n$ copies of the two programs. Suppose that for every fixed $U,V$ it declares success with probability at least $p_0>0$, and its normalized successful output has fidelity at least $F_0\geq d^{-2}$ with $|UV\rangle$. Then
 
+**Equation (3).**
+
 $$
 mn\geq\frac{p_0}{2}(d^2F_0-1).
-\tag{3}
 $$
 
 The source budgets are worst-case bounds. The theorem permits arbitrary collective operations, independent ancillary memory and adaptive measurements. A protocol with bounded sequential access can precollect all its copies and is therefore included. The converse already holds when no leftover programs are requested, so it also bounds the joint-return task. It holds in every dimension and for every allocation, including $m=1$ and $n$ much larger than $d$.
@@ -66,9 +69,10 @@ The proof first bounds the distinguishability of two averaged input states, then
 
 The same proof gives a precise Haar-average statement. If $\bar p$ is the average success probability and $\bar s$ is the average unnormalized successful overlap for independent Haar $U,V$, then
 
+**Equation (4).**
+
 $$
 \bar s-\frac{\bar p}{d^2}\leq\frac{2mn}{d^2}.
-\tag{4}
 $$
 
 For deterministic processing, $\bar p=1$. For heralded processing, $\bar s/\bar p$ is the success-weighted conditional fidelity. An unweighted average of conditional fidelities is a different statistic; see the [converse](converse.md).
@@ -77,20 +81,22 @@ For deterministic processing, $\bar p=1$. For heralded processing, $\bar s/\bar 
 
 Fix an infidelity $\epsilon\in(0,1)$ independently of $d$, and consider deterministic universal processing. Equations (1) and (3) give the necessary and sufficient copy-product scale
 
+**Equation (5).**
+
 $$
 mn=\Theta(d^2).
-\tag{5}
 $$
 
 Here “threshold” means that products below a suitable constant multiple of $d^2$ cannot achieve the specified fidelity, while products above another constant multiple suffice. The constants depend on the chosen fidelity. It does not mean that every allocation with product exactly $d^2$ attains every constant accuracy.
 
 Let $F^*_{\mathrm{out}}(d,m,n)$ denote the best worst-case fidelity of a deterministic processor for the composed program alone. The proved finite bounds are
 
+**Equation (6).**
+
 $$
 \frac{mn}{mn+d^2-1}
 \leq F^*_{\mathrm{out}}(d,m,n)
-\leq\min\left\{1,\frac{2mn+1}{d^2}\right\}.
-\tag{6}
+\leq\min\lbrace1,\frac{2mn+1}{d^2}\rbrace.
 $$
 
 They determine the fidelity scale up to constants across copy budgets, while leaving the exact optimum and its approach to one unresolved. The lower end of (6) comes from a processor with the additional joint-return guarantee.
@@ -108,7 +114,7 @@ Minimizing $m+n$ subject to the product law gives total copy complexity $\Theta(
 The finite implementation uses known gates with conservative cost
 
 $$
-\widetilde O\!\left(d(m^2+n^2)(\log d+\log(m+n))\right),
+\widetilde O\left(d(m^2+n^2)(\log d+\log(m+n))\right),
 $$
 
 where omitted factors are logarithmic in the dimensions, budgets and inverse accuracy. With balanced supplies and fixed error this is $\widetilde O(d^3)$ gates, in addition to the supplied program states. The result establishes copy efficiency, without a claimed total-runtime improvement. The dimension $d$ is the Hilbert-space dimension; for a $q$-qubit operation it equals $2^q$.

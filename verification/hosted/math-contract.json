@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 5,
+      "source_sha256": "a64a80028bf8b5db548af3e7eb3d8adef3a83df468110160091bdfdec19a2251",
+      "expected_text": "mn=Θ(d2),"
+    },
+    {
+      "path": "README.md",
+      "index": 9,
+      "source_sha256": "580fd9786ee0c9badffcaead54a0c17c8abbaf02e2b332c41e1c47630f44577c",
+      "expected_text": "mn/(mn+d2−1)"
+    },
+    {
+      "path": "README.md",
+      "index": 10,
+      "source_sha256": "7827c577a7a64ed14eb5c2722e153dcf7648032220a59a1b18ce5aa5744cc50d",
+      "expected_text": "mn≥p0(d2F0−1)/2"
+    }
+  ]
+}

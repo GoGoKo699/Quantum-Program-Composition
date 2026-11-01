@@ -11,3 +11,5 @@ Read the account in this order:
 5. [Interpretation and limits](interpretation.md): what program composition enables, how the copy advantage arises, and the boundaries of the result.
 
 The [related-work comparison](../references/RELATED_WORK.md) identifies inherited techniques and the distinct input models of earlier teleportation and program-processing tasks. The [verification guide](../verification/README.md) provides the commands and the tested scope of the finite checks. Those checks complement the analytical proofs; they do not replace them.
+
+For the foundations and a worked example before the full proofs, use the [learning route](../learning/README.md). Its [Watrous bridge](../learning/WATROUS_BRIDGE.md) translates textbook conventions into the normalized programs used here.
