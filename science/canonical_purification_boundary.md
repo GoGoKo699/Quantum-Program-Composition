@@ -189,6 +189,6 @@ This repository owns the unitary-program construction, its arbitrary-processor c
 For the common foundations, use the [Watrous bridge](../learning/WATROUS_BRIDGE.md): completely positive maps and Stinespring contractions in §2.2.2, symmetric tensor spaces in §7.1.1, and Haar averaging in §7.2.1. General positive-kernel stochastic conversion is inherited theory, discussed and attributed in the canonical proof; the task-specific polynomial support and coefficients are derived there.
 
 [canonical]: https://github.com/GoGoKo699/Canonical-Purification-Cost
-[exact]: https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/f2dc023a98242739929ef01eb4f9478d4bb96782/science/exact_frontier.md
-[mixed]: https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/f2dc023a98242739929ef01eb4f9478d4bb96782/science/mixed_frontier.md
+[exact]: https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md
+[mixed]: https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md
 

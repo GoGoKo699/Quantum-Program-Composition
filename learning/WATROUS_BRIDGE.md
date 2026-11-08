@@ -130,7 +130,7 @@ Watrous §2.2.2 also describes the sister task's success branch as a Stinespring
 
 The [canonical-purification comparison](../science/canonical_purification_boundary.md) connects these foundations to the difference between polar and exact normalization. A contraction can be a physical success operator without preserving a prescribed target direction. The composition analysis allows distortion and bounds fidelity through its Choi marginal moments. The canonical task instead uses exact-output rigidity to restrict the residual polynomial space before normalizing a filter.
 
-Its pure n-by-one success optimum and finite all-allocation LP, followed by the exact binomial accounting for mixed hard caps, are developed in [the canonical project's scientific account](https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/f2dc023a98242739929ef01eb4f9478d4bb96782/science). They are task-specific research bridges; they neither replace this repository's unitary theorem nor add a second educational anchor.
+Its pure n-by-one success optimum and finite all-allocation LP, followed by the exact binomial accounting for mixed hard caps, are developed in [the canonical project's scientific account](https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/c0e1cac831e7bc6073042974c5f440bd847b37a0/science). They are task-specific research bridges; they neither replace this repository's unitary theorem nor add a second educational anchor.
 
 ## Research bridges supplied by the project
 

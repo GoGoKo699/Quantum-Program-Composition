@@ -343,7 +343,7 @@
       "repository_owner": "GoGoKo699",
       "repository": "GoGoKo699/Canonical-Purification-Cost",
       "baseline_revision": "823c42ab394e6764263aeb670a7d86292cec5341",
-      "frontier_revision": "f2dc023a98242739929ef01eb4f9478d4bb96782",
+      "frontier_revision": "c0e1cac831e7bc6073042974c5f440bd847b37a0",
       "url": "https://github.com/GoGoKo699/Canonical-Purification-Cost",
       "inspected_locations": [
         "science/model.md",
@@ -356,8 +356,8 @@
       "role": "Sister exact canonical-purification task. Shared coherent contraction/full-space normalization; task-specific arbitrary-processor exact LP and fully counted mixed-source binomial frontier. The unitary-Choi theorem is not a premise.",
       "primary_sources": [
         "https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/823c42ab394e6764263aeb670a7d86292cec5341/science",
-        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/f2dc023a98242739929ef01eb4f9478d4bb96782/science/exact_frontier.md",
-        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/f2dc023a98242739929ef01eb4f9478d4bb96782/science/mixed_frontier.md"
+        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md",
+        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md"
       ]
     }
   ]

@@ -156,13 +156,13 @@ Consequently,
 
 **Equation (10).**
 
-$$
+```math
 Lv=\frac1d w,
 \qquad
-Mv=\sqrt\muw,
+Mv=\sqrt{\mu}\,w,
 \qquad
 \mu=\frac{mn}{d}.
-$$
+```
 
 Let $K=MG_{\mathcal S}^{-1/2}$ be the polar partial isometry, zero on the kernel. It is a contraction, with $K^{\dagger}K=\Pi_{\mathrm{supp}G_{\mathcal S}}$. Since $G^{-1/2}$ preserves $\mathcal S$, every routed physical branch satisfies
 

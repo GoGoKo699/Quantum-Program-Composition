@@ -83,7 +83,7 @@ M^\dagger M=G_{\mathcal S},
 A^\dagger A=\frac{G_{\mathcal S}}{dmn}.
 $$
 
-Equation (2) also proves $\VertA\Vert\leq1$ and $\VertM\Vert\leq\sqrt{dmn}$. The relevant singular spectrum is that of the **restricted block** $QP$. The unrestricted Bell projector has only zero and unit singular values and cannot by itself implement this polar transformation.
+Equation (2) also proves $\Vert A\Vert\leq1$ and $\Vert M\Vert\leq\sqrt{dmn}$. The relevant singular spectrum is that of the **restricted block** $QP$. The unrestricted Bell projector has only zero and unit singular values and cannot by itself implement this polar transformation.
 
 ## 2. Approximating the polar map on the supplied states
 
@@ -220,7 +220,7 @@ $$
 V^\dagger e^{i\phi(2\Pi_0-I)}V
 $$
 
-implements $e^{i\phi(2P-I)}$ on clean ancillas. This follows by expanding the exponential into $\cos\phiI+i\sin\phi(2\Pi_0-I)$ and using (9). Adding the single QSVT control qubit changes the gate count by a constant factor. The Bell-subspace phases are implemented by preparing and unpreparing the known $|\Phi_d\rangle$ and phasing the all-zero state.
+implements $e^{i\phi(2P-I)}$ on clean ancillas. This follows by expanding the exponential into $`\cos\phi\,I+i\sin\phi(2\Pi_0-I)`$ and using (9). Adding the single QSVT control qubit changes the gate count by a constant factor. The Bell-subspace phases are implemented by preparing and unpreparing the known $|\Phi_d\rangle$ and phasing the all-zero state.
 
 ## 5. Charged circuit resources
 
