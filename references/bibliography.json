@@ -335,6 +335,30 @@
         "https://cs.uwaterloo.ca/~watrous/TQI/TQI.3.pdf",
         "https://cs.uwaterloo.ca/~watrous/TQI/TQI.7.pdf"
       ]
+    },
+    {
+      "id": "canonical_purification_cost",
+      "type": "research_repository",
+      "title": "Canonical Purification Cost",
+      "repository_owner": "GoGoKo699",
+      "repository": "GoGoKo699/Canonical-Purification-Cost",
+      "baseline_revision": "823c42ab394e6764263aeb670a7d86292cec5341",
+      "frontier_revision": "c0e1cac831e7bc6073042974c5f440bd847b37a0",
+      "url": "https://github.com/GoGoKo699/Canonical-Purification-Cost",
+      "inspected_locations": [
+        "science/model.md",
+        "science/construction.md",
+        "science/harmonic_analysis.md",
+        "science/converse.md",
+        "science/exact_frontier.md",
+        "science/mixed_frontier.md"
+      ],
+      "role": "Sister exact canonical-purification task. Shared coherent contraction/full-space normalization; task-specific arbitrary-processor exact LP and fully counted mixed-source binomial frontier. The unitary-Choi theorem is not a premise.",
+      "primary_sources": [
+        "https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/823c42ab394e6764263aeb670a7d86292cec5341/science",
+        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md",
+        "https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md"
+      ]
     }
   ]
 }

@@ -301,3 +301,14 @@ The project's conclusion is the composition resource law under the stated
 copy access model. Return to the [milestone map](MILESTONES.md) to locate
 the individual conceptual dependencies, or to the
 [scientific account](../science/README.md) for the complete proofs.
+
+
+## 8. Test the scope of a shared contraction method
+
+**Milestones M19, M29–M30.** A related exact task is to prepare the canonical purification of a known-vacuum rank-two family from state/conjugate samples. The [comparison page](../science/canonical_purification_boundary.md) supplies its source states and target.
+
+Both constructions begin with a linear map that has the desired coherent action. A physical success operator must also be a contraction on the whole input space. For the program composer, polar normalization produces a legal map and the Choi marginal moments control its distortion. Exact purification requires the accepted target direction to be preserved, so the sister proof first derives a residual-polynomial restriction from exactness and then optimizes the physical residual effect.
+
+This gives a useful way to assess a proposed transfer. Check what correlations are supplied, what systems remain inaccessible, whether successful output is exact, and whether every rejected source request counts. Unitary Choi halves are maximally mixed, but extracted signal specimens are rank one. The corresponding moment proof therefore does not transfer. With one conjugate mixed specimen, a vacuum outcome alone prevents exact success and imposes a ceiling of one-half, regardless of the other budget.
+
+The [canonical pure frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md) and [mixed-source frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md) own those exact proofs. This repository's result remains the fixed-error unitary-program composition law. Shared methods explain the relationship without turning one theorem into a premise of the other.

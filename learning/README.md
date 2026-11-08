@@ -21,6 +21,7 @@ research-level dependencies have their own cited scientific sources.
 | Connect familiar quantum-information foundations to this task | [Watrous bridge](WATROUS_BRIDGE.md) |
 | Inspect exact quantifiers and proofs | [Scientific account](../science/README.md) |
 | Reproduce the small-system checks | [Verification guide](../verification/README.md) |
+| Compare the method with exact state preparation | [Canonical-purification boundary](../science/canonical_purification_boundary.md) |
 
 The milestone map is defined by the scientific project and is shared by all
 readers. Its background phase builds the operational and mathematical
@@ -43,3 +44,5 @@ questions. A good single-use return guarantee does not establish a
 repeated-reuse rate. These conventions and boundaries are carried through
 the learning route and stated precisely in the [model](../science/model.md)
 and [interpretation](../science/interpretation.md).
+
+The same Watrous foundations support the sister canonical-purification task, but its learning route has different understanding targets. The final milestones here use the [comparison](../science/canonical_purification_boundary.md) to audit a proposed transfer: check the accessible correlations, the exact or approximate output promise, every source charge, and the residual systems. Shared contraction machinery does not make the two resource laws interchangeable.

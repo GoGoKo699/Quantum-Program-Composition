@@ -12,6 +12,10 @@ $$
 
 where $m$ and $n$ are the two copy budgets. Balanced supplies therefore require and suffice with $\Theta(d)$ copies of each program. The construction additionally returns the remaining programs within one global fidelity guarantee.
 
+## Sister connection: exact canonical purification
+
+[Canonical-Purification-Cost](https://github.com/GoGoKo699/Canonical-Purification-Cost) studies a related contraction problem with an exact prescribed output and independent state/conjugate samples. Its sharp unequal-budget frontier is derived from exact-output rigidity and a finite LP, with mixed-source costs given by an exact binomial transform. The shared mechanism is coherent contraction with physical whole-space normalization; the unitary-Choi theorem below is not a premise of that frontier. The [comparison and transfer boundary](science/canonical_purification_boundary.md) fixes the different input correlations, exactness requirements and ownership.
+
 ## Principal results
 
 | Result | Established guarantee | Scientific account |
@@ -42,6 +46,7 @@ Choose a route according to the question you want to answer:
 | Which foundations connect to the proofs? | [Watrous bridge](learning/WATROUS_BRIDGE.md) |
 | How do the ideas fit into one learning route? | [Learning guide](learning/README.md) and [30 milestones](learning/MILESTONES.md) |
 | How can I reproduce the finite checks? | [Verification guide](verification/README.md) |
+| Which contraction ideas apply to exact purification? | [Canonical-purification boundary](science/canonical_purification_boundary.md) and [sister project](https://github.com/GoGoKo699/Canonical-Purification-Cost) |
 
 The single educational anchor is John Watrous's *The Theory of Quantum Information* (2018). The bridge identifies relevant sections and translates the Choi normalization and fidelity conventions. The specialist proofs remain in the scientific account.
 

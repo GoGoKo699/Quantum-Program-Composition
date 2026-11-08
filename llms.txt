@@ -9,6 +9,7 @@ Physical instrument, PGM and global returned-program fidelity: science/construct
 All-dimensional mixed-moment comparison and universal converse: science/converse.md
 Projected QSVT, known symmetry phases and charged gate costs: science/implementation.md
 Meaning, precision alternatives and limitations: science/interpretation.md
+Shared contraction method and exact canonical-purification transfer boundary: science/canonical_purification_boundary.md
 Closest work and inherited ingredients: references/RELATED_WORK.md
 Structured source metadata: references/bibliography.json
 Reproduction commands and tested limits: verification/README.md
@@ -21,7 +22,8 @@ Story route: README.md -> learning/TUTORIAL.md -> science/interpretation.md.
 Study route: learning/README.md -> learning/MILESTONES.md, using learning/WATROUS_BRIDGE.md for targeted Watrous readings and notation conversions.
 Theorem route: science/model.md -> science/construction.md -> science/converse.md -> science/implementation.md.
 Reproduction route: verification/README.md -> the three documented Python scripts.
+Sister route: science/canonical_purification_boundary.md -> Canonical-Purification-Cost/science/exact_frontier.md and science/mixed_frontier.md. The canonical repository owns those proofs; this project owns the unitary-Choi composition law.
 
 Educational anchor: John Watrous, The Theory of Quantum Information (2018), official author-hosted prepublication manuscript. Its Choi operator is unnormalized and its fidelity is unsquared. The project divides a unitary channel's Choi operator by d and uses squared pure-target overlap. The learning map is a common route through the scientific understanding targets.
 
-Essential distinctions: Fidelity is pure-target overlap (squared convention). Inputs are complete pure unitary Choi copies; no unknown-unitary query or preparation oracle is supplied. The main theorem is a bounded-copy, constant-error resource law. The output is a program state, not application to fresh data. Global approximate program return does not establish indefinite reuse. Copy complexity and known-gate complexity are distinct.
+Essential distinctions: Fidelity is pure-target overlap (squared convention). Inputs are complete pure unitary Choi copies; no unknown-unitary query or preparation oracle is supplied. The main theorem is a bounded-copy, constant-error resource law. The output is a program state, not application to fresh data. Global approximate program return does not establish indefinite reuse. Copy complexity and known-gate complexity are distinct. Exact canonical purification is a different task: rank-one signal marginals do not satisfy the maximally mixed Choi-moment premise, and polar normalization need not preserve exact accepted coherence. Its unequal-budget exact LP and mixed binomial frontier do not import this project's theorem; no canonical approximate-fidelity product law or general nm-of-order-d theorem is asserted.

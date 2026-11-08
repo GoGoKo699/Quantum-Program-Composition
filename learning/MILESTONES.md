@@ -169,13 +169,13 @@ Three source conventions matter throughout:
 - **Conceptual connection:** Uniformity over unknown $U,V$ follows from the marginal structure, not from averaging the accuracy guarantee over those unitaries.
 - **Sources:** [Watrous §§2.1.3][w213] and [1.2.2][w122]; [exact moment derivation](../science/construction.md#3-exact-first-and-second-moments).
 
-### M19 — Polar normalization preserves the full joint target
+### M19 — Polar normalization controls the full joint target
 
 - **Central question:** How do the moments certify the composed program and every returned specimen together?
 - **Understanding target:** Connect the polar overlap to $(\mathbb E\sqrt X)^2$, with $X=G/\mathbb EG$, and follow the Hölder step yielding $F_{\rm global}\geq1/(1+r)=mn/(mn+d^2-1)$. Keep this unconditional contribution distinct from the support probability $p$ and the conditional fidelity $f_{\rm pol}/p$.
 - **Dependencies and story role:** M08, M11, M16–M18. Completes the constructive argument by joining physical branches to a global error guarantee.
-- **Conceptual connection:** The bound remains informative when $1-r$ is negative. It certifies approximate joint return without asserting that every successful output is exact or that the bound is optimal.
-- **Sources:** [Watrous §§1.1.3][w113], [1.2.2][w122] and [3.2.1][w321] for the spectral and fidelity language; [local Hölder derivation and success probability](../science/construction.md#4-fidelity-and-success-probability), [global theorem](../science/model.md#theorem-1-a-universal-collective-construction).
+- **Conceptual connection:** The bound remains informative when $1-r$ is negative. It certifies approximate joint return without asserting that every successful output is exact or that the bound is optimal. Compare this tolerance for distortion with a prescribed pure target that must remain exact on success.
+- **Sources:** [Watrous §§1.1.3][w113], [1.2.2][w122] and [3.2.1][w321] for the spectral and fidelity language; [local Hölder derivation and success probability](../science/construction.md#4-fidelity-and-success-probability), [global theorem](../science/model.md#theorem-1-a-universal-collective-construction), [polar versus exact normalization](../science/canonical_purification_boundary.md#the-shared-physical-normalization-problem).
 
 ### M20 — Correlated and independent program priors
 
@@ -252,18 +252,18 @@ Three source conventions matter throughout:
 ### M29 — Returned programs and operational limits
 
 - **Central question:** Which further capabilities do the established promises leave unresolved?
-- **Understanding target:** Explain why approximate joint return is a one-shot statement, why successive reuse needs accumulated-error accounting, and why a Choi output does not itself execute the product on arbitrary fresh data. Retain the pure-unitary-program and full-access assumptions when considering noise, mixed programs, many outputs or expected budgets. Translate the gate count into its dependence on a qubit operation's dimension.
+- **Understanding target:** Explain why approximate joint return is a one-shot statement, why successive reuse needs accumulated-error accounting, and why a Choi output does not itself execute the product on arbitrary fresh data. Retain the pure-unitary-program and full-access assumptions when considering noise, mixed programs, many outputs or expected budgets. Translate the gate count into its dependence on a qubit operation's dimension. Audit the canonical-purification comparison: its inaccessible source environment, rank-one signal marginal, exact accepted target and fully counted mixed caps differ from these program promises.
 - **Dependencies and story role:** M03, M08, M13, M19, M23, M26–M28. Interprets the integrated result under its material assumptions and resource costs.
-- **Conceptual connection:** The theorem establishes a capability for manipulating supplied quantum information. It does not establish an indefinite catalyst, a noisy-program theorem or a practical runtime advantage.
-- **Sources:** [Watrous §§2.1.3][w213], [2.2.1][w221] and [3.2.1][w321] for joint states, channels and fidelity; [interpretation and limits](../science/interpretation.md), [converse boundaries](../science/converse.md#3-verification-and-boundaries), [charged resources](../science/implementation.md#5-charged-circuit-resources).
+- **Conceptual connection:** The theorem establishes a capability for manipulating supplied quantum information. It does not establish an indefinite catalyst, a noisy-program theorem or a practical runtime advantage. Shared coherent contraction is a valid methodological relation to canonical purification, while a theorem transfer still requires matching the actual source and output hypotheses.
+- **Sources:** [Watrous §§2.1.3][w213], [2.2.1][w221] and [3.2.1][w321] for joint states, channels and fidelity; [interpretation and limits](../science/interpretation.md), [converse boundaries](../science/converse.md#3-verification-and-boundaries), [charged resources](../science/implementation.md#5-charged-circuit-resources), [canonical-purification transfer boundary](../science/canonical_purification_boundary.md#why-the-composition-theorem-does-not-transfer).
 
 ### M30 — The integrated result, evidence, and inherited tools
 
 - **Central question:** How do the mechanism, obstruction, implementation and attribution support one coherent scientific claim?
-- **Understanding target:** Trace the complete chain from Bell contraction and collective normalization through moments and joint fidelity, then from correlated priors and harmonic blocks to the universal converse, and finally to charged gates. Identify which finite checks test consequential identities, which arguments establish the all-dimensional theorem, and which tools are inherited from prior research.
+- **Understanding target:** Trace the complete chain from Bell contraction and collective normalization through moments and joint fidelity, then from correlated priors and harmonic blocks to the universal converse, and finally to charged gates. Identify which finite checks test consequential identities, which arguments establish the all-dimensional theorem, and which tools are inherited from prior research. Explain why the exact canonical frontier has its own rigidity, harmonic LP and binomial source accounting rather than a dimension substitution in the Choi theorem.
 - **Dependencies and story role:** M14–M29, drawing on the complete background phase. Integrates the narrative into the project's final scientific interpretation.
-- **Conceptual connection:** The result is an optimal fixed-error copy-allocation law for the stated program task, with a stronger constructive return guarantee and an explicit implementation. PGM, representation theory and QSVT retain their prior attribution; finite numerical agreement does not replace proof or determine priority.
-- **Sources:** [Watrous §§2.2.2][w222], [3.1.1][w311], [3.1.2][w312] and [7.1.2][w712] as foundations; [canonical model](../science/model.md), [scientific account](../science/README.md), [verification scope](../verification/README.md), [operational comparisons and inherited ingredients](../references/RELATED_WORK.md).
+- **Conceptual connection:** The result is an optimal fixed-error copy-allocation law for the stated program task, with a stronger constructive return guarantee and an explicit implementation. PGM, representation theory and QSVT retain their prior attribution; finite numerical agreement does not replace proof or determine priority. The sister relation identifies a shared physical normalization problem with different operational consequences and a clear authoritative home for each proof.
+- **Sources:** [Watrous §§2.2.2][w222], [3.1.1][w311], [3.1.2][w312] and [7.1.2][w712] as foundations; [canonical model](../science/model.md), [scientific account](../science/README.md), [verification scope](../verification/README.md), [operational comparisons and inherited ingredients](../references/RELATED_WORK.md), [shared method and result ownership](../science/canonical_purification_boundary.md#ownership-and-reading-route).
 
 [watrous]: https://cs.uwaterloo.ca/~watrous/TQI/TQI.pdf
 [w111]: https://cs.uwaterloo.ca/~watrous/TQI/TQI.pdf#page=9

@@ -124,6 +124,14 @@ $\mathbb C^{d^2}$. Those are different ensembles. The local
 [converse](../science/converse.md) explains the correlated and independent
 priors before applying the discrimination bound.
 
+## The same foundations in exact canonical purification
+
+Watrous §2.2.2 also describes the sister task's success branch as a Stinespring contraction. Section 7.1.1 supplies the language of repeated specimens, while §7.2.1 justifies Haar twirling when passing from arbitrary exact processors to uniform success. Here a symmetric factor is a whole two-register program; in the sister pure-input problem it is one signal specimen. The fixed basis defining a supplied conjugate is part of that other model.
+
+The [canonical-purification comparison](../science/canonical_purification_boundary.md) connects these foundations to the difference between polar and exact normalization. A contraction can be a physical success operator without preserving a prescribed target direction. The composition analysis allows distortion and bounds fidelity through its Choi marginal moments. The canonical task instead uses exact-output rigidity to restrict the residual polynomial space before normalizing a filter.
+
+Its pure n-by-one success optimum and finite all-allocation LP, followed by the exact binomial accounting for mixed hard caps, are developed in [the canonical project's scientific account](https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/c0e1cac831e7bc6073042974c5f440bd847b37a0/science). They are task-specific research bridges; they neither replace this repository's unitary theorem nor add a second educational anchor.
+
 ## Research bridges supplied by the project
 
 The following are research dependencies, not additional educational anchors.

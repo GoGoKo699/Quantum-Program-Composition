@@ -41,6 +41,14 @@ The public research repository [Quantum-Coherent-Collisions](https://github.com/
 
 Those collective-copy ideas are shared. Matrix multiplication additionally sums coherently over a contracted index between two sources, and its Gram operator is a sum of noncommuting Bell projectors. The amplitude-power theorem does not directly implement this contraction or supply the mixed-unitary moment converse. The source is a scientific repository at a pinned revision, not a claim of an independently published article.
 
+## Exact canonical purification and the normalization boundary
+
+[Canonical-Purification-Cost](https://github.com/GoGoKo699/Canonical-Purification-Cost) is a sister task rather than a specialization of the unitary-Choi theorem. Its [earlier model and balanced construction](https://github.com/GoGoKo699/Canonical-Purification-Cost/tree/823c42ab394e6764263aeb670a7d86292cec5341/science) prescribe the canonical purification of a flat rank-two state with a known vacuum, supplied through independent state/conjugate streams. Their inaccessible environments are not part of the input.
+
+The shared method is coherent contraction across separately symmetric copy pools, exact target/residual factorization before normalization, and a norm check on the whole physical input space. The [pure exact frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md) additionally uses exact-output polynomial rigidity and charged harmonic kernels to characterize every pure allocation by a finite LP. Its [mixed frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md) is the lossless binomial average over known vacuum/signal occupancy counts. These proofs belong in that repository; they do not use the unitary-Choi composition theorem as a premise.
+
+The [local comparison](../science/canonical_purification_boundary.md) gives the task definitions, the one-conjugate exact optimum, the mixed-source success ceiling, and the transfer obstruction. Choi inner marginals are maximally mixed; canonical signals are rank one. The polar normalization here generally changes the accepted direction and supports an approximate joint-fidelity guarantee; exact purification requires the specified coherent direction on every accepted output. Neither a substitution of $d$ for $d^2$ nor the common symmetry notation supplies the missing proof. No exact canonical frontier is credited as a second unitary-program theorem, and no approximate-fidelity product law is inferred.
+
 ## Representation theory used by the converse
 
 The [converse](../science/converse.md) compares correlated and independent Haar-unitary program ensembles. Its representation-theoretic foundation is inherited:
