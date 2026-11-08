@@ -40,6 +40,12 @@ $$
 
 Assigning an arbitrary output on failure therefore gives infidelity at most $\epsilon$ with $k=\lceil d^2\log(1/\epsilon)\rceil$ pairs. This alternative does not return all but one specimen from each input pool. For extremely small error it can use fewer copies than the sufficient balanced collective allocation $O(d/\sqrt\epsilon)$. A precision-sensitive comparison must retain both alternatives.
 
+## Exact purification as a related contraction task
+
+The sister project [Canonical-Purification-Cost](https://github.com/GoGoKo699/Canonical-Purification-Cost) must prepare a specified vacuum/signal coherent purification exactly on success. Both projects use contraction on separately symmetric copy pools and require physical normalization on the whole input space. Their normalizations answer different correctness requirements: the polar map here permits controlled distortion, whereas exact purification must retain the prescribed coherence.
+
+The [self-contained comparison](canonical_purification_boundary.md) explains why maximally mixed Choi marginals and the unitary-prior converse do not apply to independent rank-two state/conjugate samples. Its exact pure frontier is a finite all-allocation LP; mixed hard caps require averaging over the actual binomial signal counts. Those results have their authoritative proof in the sister repository. They do not follow by replacing $d^2$ with $d$ in this project's theorem.
+
 ## What the present theorem leaves open
 
 The supported result fixes the order of the copy-product threshold and provides an implementable universal construction. Exact optimal fidelity, sharp small-error rates, improved gate counts, robustness to mixed or noisy programs, expected-budget protocols and repeated composition are separate questions. They are not needed to justify the stated constant-error law, and no result about them is assumed in its proof.
