@@ -28,6 +28,8 @@ The target contains one fewer copy from each pool together with the composed pro
 
 The actual returned registers need not be exact independent copies. In particular, counting only the two selected specimens as permanently consumed would omit the accumulated approximation error if the leftovers were reused. No indefinite catalyst, long-chain composition rate or many-output cost follows from the one-output theorem alone.
 
+If the accepted product and all unused programs must be exact, the [exact-return theorem](exact_joint_return.md) gives a sharp success probability $M/[d(M+d-1)]$ for $M=\max(m,n)$. At fixed total supply, unbalancing the two pools improves this heralded probability. Balancing the pools instead maximizes the product that controls the deterministic approximate guarantee.
+
 ## Precision and alternative strategies
 
 The exact collective channel gives global infidelity at most $(d^2-1)/(mn+d^2-1)$. Its explicit circuit can achieve the requested infidelity with copy product $mn=O(d^2/\epsilon)$, with larger constants specified in [Implementation](implementation.md). The converse matches the constant-error product scale, rather than the dependence on $\epsilon$ as it tends to zero.

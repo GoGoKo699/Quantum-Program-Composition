@@ -303,7 +303,18 @@ the individual conceptual dependencies, or to the
 [scientific account](../science/README.md) for the complete proofs.
 
 
-## 8. Test the scope of a shared contraction method
+## 8. Compare two allocation choices
+
+**Milestones M28–M30.** Suppose you can request four qubit programs total.
+The 2+2 allocation gives the larger product, so it improves the deterministic
+approximate guarantee. When the accepted run must return every unused
+program exactly, the 1+3 allocation is better. Its success is 3/8, compared
+with 1/3 for 2+2. In this task every accepted Kraus map is proportional to
+the same routed contraction on the symmetric input space. The largest
+eigenvalue of its effect fixes the probability. See the
+[exact-return proof](../science/exact_joint_return.md).
+
+## 9. Test the scope of a shared contraction method
 
 **Milestones M19, M29–M30.** A related exact task is to prepare the canonical purification of a known-vacuum rank-two family from state/conjugate samples. The [comparison page](../science/canonical_purification_boundary.md) supplies its source states and target.
 
@@ -311,4 +322,4 @@ Both constructions begin with a linear map that has the desired coherent action.
 
 This gives a useful way to assess a proposed transfer. Check what correlations are supplied, what systems remain inaccessible, whether successful output is exact, and whether every rejected source request counts. Unitary Choi halves are maximally mixed, but extracted signal specimens are rank one. The corresponding moment proof therefore does not transfer. With one conjugate mixed specimen, a vacuum outcome alone prevents exact success and imposes a ceiling of one-half, regardless of the other budget.
 
-The [canonical pure frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md) and [mixed-source frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md) own those exact proofs. This repository's result remains the fixed-error unitary-program composition law. Shared methods explain the relationship without turning one theorem into a premise of the other.
+The [canonical pure frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/exact_frontier.md) and [mixed-source frontier](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/c0e1cac831e7bc6073042974c5f440bd847b37a0/science/mixed_frontier.md) own those exact proofs. Imposing [exact pure residual return](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/main/science/exact_joint_return.md) fixes the normalization through a single contraction norm. The [exact Bell-return theorem](https://github.com/GoGoKo699/Quantum-Multicopy-Teleportation/blob/main/science/exact-return.md) uses that norm in the receiver-restricted teleportation task.

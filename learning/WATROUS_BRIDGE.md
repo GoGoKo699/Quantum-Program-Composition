@@ -137,6 +137,8 @@ Its pure n-by-one success optimum and finite all-allocation LP, followed by the 
 The following are research dependencies, not additional educational anchors.
 They are introduced where the project needs them.
 
+**From pure accepted output to exact return.** In §2.2.2 a successful operation has Kraus maps whose total effect is at most the identity. If its joint output is pure, each accepted Kraus vector is on the target ray. The [exact-return proof](../science/exact_joint_return.md) uses this observation and the symmetric tensors in §7.1.1. A polynomial argument fixes each Kraus map on the whole-program symmetric space. The ordered Bell-sum norm then fixes the optimal success probability. The same norm is used in the [Bell-return theorem](https://github.com/GoGoKo699/Quantum-Multicopy-Teleportation/blob/main/science/exact-return.md) and the [pure purification return theorem](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/main/science/exact_joint_return.md).
+
 **From symmetry to the universal converse.** The lower bound uses the
 represented commutant of $U^{\otimes m}\otimes\overline U^{\otimes n}$.
 Its cross-contractions define a harmonic subspace; centrality of that

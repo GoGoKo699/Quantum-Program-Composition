@@ -19,9 +19,9 @@ No network access, credentials, quantum device or operation oracle is needed. Th
 
 ## Construction and physical registers
 
-`check_construction.py` forms the Bell-sum operator on the inner halves and diagonalizes it. Twelve cases range over local dimensions two to four, with largest inner Hilbert-space dimension 256. The script checks both exact moments, spectral success probability, the polar target overlap and the proved finite-budget bound.
+`check_construction.py` forms the Bell-sum operator on the inner halves and diagonalizes it. Thirteen cases range over local dimensions two to four, with largest inner Hilbert-space dimension 256. The script checks both exact moments, spectral success probability, the polar target overlap, the proved finite-budget bound and the top eigenvalue used for exact return.
 
-Five physical-register cases each use two seeded complex Haar program pairs. They verify the order of multiplication, the entire leftover-program tensor, equality of all routed branches and agreement with the spectral formulas. A generic input outside the identical-copy promise also tests the instrument's support effect.
+Seven physical-register cases each use two seeded complex Haar program pairs. They verify the order of multiplication, the entire leftover-program tensor, equality of all routed branches and agreement with the spectral formulas. Generic inputs outside the identical-copy promise test the effects of both instruments on the full physical space. The 2+2 and 1+3 qubit cases reproduce exact joint-return probabilities of 1/3 and 3/8. The [exact-return proof](../science/exact_joint_return.md) establishes the arbitrary-processor bound.
 
 Representative polar-branch contributions to global fidelity are:
 

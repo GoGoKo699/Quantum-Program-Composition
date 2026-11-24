@@ -19,11 +19,13 @@ import numpy as np
 
 
 SPECTRAL_CASES = (
-    (2, 1, 1), (2, 1, 2), (2, 1, 5), (2, 2, 2), (2, 3, 3), (2, 4, 4),
+    (2, 1, 1), (2, 1, 2), (2, 1, 3), (2, 1, 5), (2, 2, 2), (2, 3, 3), (2, 4, 4),
     (3, 1, 1), (3, 1, 3), (3, 2, 2),
     (4, 1, 1), (4, 1, 2), (4, 2, 2),
 )
-PHYSICAL_CASES = ((2, 1, 1), (2, 1, 2), (2, 2, 2), (2, 1, 4), (3, 1, 2))
+PHYSICAL_CASES = (
+    (2, 1, 1), (2, 1, 2), (2, 2, 2), (2, 1, 3), (2, 1, 4), (2, 2, 3), (3, 1, 2),
+)
 SEED = 20261101
 
 
@@ -81,6 +83,8 @@ def spectral_data(gram: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]
 def check_spectrum(d: int, m: int, n: int) -> dict[str, float | int]:
     gram = gram_operator(d, m, n)
     values, _, _ = spectral_data(gram)
+    exact_norm = min(m, n) * (max(m, n) + d - 1)
+    close(float(values.max()), exact_norm, "incorrect exact-return operator norm")
     mean = m * n / d
     variance = m * n * (1.0 - d**-2)
     close(float(values.mean()), mean, "incorrect first moment")
@@ -103,6 +107,7 @@ def check_spectrum(d: int, m: int, n: int) -> dict[str, float | int]:
         "mean": float(values.mean()), "variance": float(values.var()),
         "polar_global_fidelity": fidelity, "success_probability": success,
         "proved_fidelity_lower_bound": lower,
+        "exact_return_gram_norm": float(values.max()),
     }
 
 
@@ -160,6 +165,9 @@ def check_physical_case(d: int, m: int, n: int,
     values, inverse, support = spectral_data(gram)
     predicted_fidelity = float(np.sqrt(values).mean() ** 2 / (m * n / d))
     predicted_success = float(np.count_nonzero(values) / len(values))
+    exact_norm = min(m, n) * (max(m, n) + d - 1)
+    exact_scale = np.sqrt(d / exact_norm)
+    exact_optimum = max(m, n) / (d * (max(m, n) + d - 1))
     max_bare_error = 0.0
     max_branch_difference = 0.0
     for _ in range(2):
@@ -172,12 +180,18 @@ def check_physical_case(d: int, m: int, n: int,
         close(float(np.vdot(target, target).real), 1.0, "target not normalized")
         # The target is independently formed by ordinary matrix multiplication.
         # This catches wrong transposes, wrong product order and leftover routing.
+        exact_probabilities = []
         for r in range(m):
             for s in range(n):
                 bare = bell_contract_and_route(state, d, m, n, r, s)
                 error = float(np.linalg.norm(d * bare - target))
                 max_bare_error = max(max_bare_error, error)
                 check(error < 2e-10, "Bell contraction did not produce UV and residues")
+                exact_branch = exact_scale * bare
+                close(exact_branch, target / np.sqrt(d * exact_norm),
+                      "scalar-normalized branch did not return exact joint target")
+                exact_probabilities.append(float(np.vdot(exact_branch, exact_branch).real))
+        close(sum(exact_probabilities), exact_optimum, "incorrect exact-return success")
         branches = physical_branches(state, d, m, n, inverse)
         difference = max(float(np.linalg.norm(branch - branches[0]))
                          for branch in branches)
@@ -199,6 +213,15 @@ def check_physical_case(d: int, m: int, n: int,
     probability_support = float(np.vdot(projected, projected).real)
     close(success_generic, probability_support, "general-input instrument is not normalized")
     check(success_generic <= 1.0 + 2e-10, "general-input probability exceeds one")
+    exact_branches = [
+        exact_scale * bell_contract_and_route(generic, d, m, n, r, s)
+        for r in range(m) for s in range(n)
+    ]
+    exact_generic = sum(float(np.vdot(branch, branch).real) for branch in exact_branches)
+    effect_state = apply_on_axes(generic, gram / exact_norm, inner, d, 2 * (m + n))
+    close(exact_generic, float(np.vdot(generic, effect_state).real),
+          "exact-return instrument does not realize its claimed effect")
+    check(exact_generic <= 1.0 + 2e-10, "exact-return instrument violates completeness")
     return {
         "d": d, "m": m, "n": n, "program_trials": 2,
         "max_bare_contraction_error": max_bare_error,
@@ -206,6 +229,7 @@ def check_physical_case(d: int, m: int, n: int,
         "polar_global_fidelity": predicted_fidelity,
         "success_probability": predicted_success,
         "general_input_support_error": abs(success_generic - probability_support),
+        "exact_return_success_probability": exact_optimum,
     }
 
 
@@ -225,10 +249,12 @@ def main() -> None:
             print("spectrum d={d} m={m} n={n}: "
                   "F_pol={polar_global_fidelity:.9f} "
                   "p={success_probability:.9f} "
-                  "bound={proved_fidelity_lower_bound:.9f} PASS".format(**row))
+                  "bound={proved_fidelity_lower_bound:.9f} "
+                  "exact Gram norm={exact_return_gram_norm:.0f} PASS".format(**row))
         for row in physical:
             print("physical d={d} m={m} n={n}: UV order, returned programs, "
-                  "branch equality and general-input normalization PASS".format(**row))
+                  "branch equality and general-input normalization PASS. "
+                  "Exact return p={exact_return_success_probability:.9f} PASS".format(**row))
         print(f"PASS: {len(spectra)} spectra; {len(physical)} physical cases "
               f"with two seeded program pairs and one general input each; seed={SEED}")
 
