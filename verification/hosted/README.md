@@ -18,10 +18,10 @@ Download the complete artifact directory before its retention period expires. Pr
 
 ## Verifier provenance
 
-The two utilities are unchanged copies of the canonical hosted-math verifier, version **0.10.0**. Their recorded SHA-256 values are:
+The two utilities are unchanged copies of the reviewed hosted-math verifier. The collector accounts for equivalent norm and perpendicular glyphs using operator provenance. Their recorded SHA-256 values are:
 
 ```text
-49182eaf354e86f685a4976814d672de5d7329a2d9e42f62a5227e2bc07c2d18  capture_hosted_math.cjs
+7899ba20a77ed91ec54962611fbf93afb4c588a16af211686c742cde51d11c29  capture_hosted_math.cjs
 edbc2d72af94e96b78166d74b66fcea150134f2f3ebaaea121e9057768e1dbfe  check_rendered_math.py
 ```
 
