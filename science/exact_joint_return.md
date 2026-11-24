@@ -4,7 +4,7 @@ Given copies of two unknown unitary programs, how often can a processor deliver 
 
 ## Model and optimum
 
-Let $d\geq2$ and $m,n\geq1$. Use the normalized row-first Choi vector $|X\rangle=\operatorname{vec}(X)/\sqrt d$. The input and required accepted output are
+Let $d\geq2$ and $m,n\geq1$. Use the normalized row-first Choi vector $|X\rangle=\mathrm{vec}(X)/\sqrt d$. The input and required accepted output are
 
 ```math
 v=|U\rangle^{\otimes m}\otimes|V\rangle^{\otimes n},
