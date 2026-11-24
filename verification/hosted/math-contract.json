@@ -33,7 +33,7 @@
       "index": 7,
       "source_sha256": "c86b8cc84fcc47fa017809bb007a5045a453af0af503c56e11112b4b1235ae24",
       "required_text": [
-        "pexact=",
+        "pexact(d,m,n)=",
         "M+d−1"
       ]
     }
