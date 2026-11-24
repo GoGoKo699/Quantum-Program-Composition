@@ -1,8 +1,35 @@
 {
   "schema_version": 1,
-  "checked_on": "2026-11-01",
+  "checked_on": "2026-11-24",
   "scope": "Primary sources for the operational comparisons and mathematical tools in Quantum-Program-Composition. An arXiv version records the inspected preprint; publication metadata refers to the journal or proceedings record.",
   "entries": [
+    {
+      "id": "chiribella_dariano_perinotti2011",
+      "type": "journal_article",
+      "authors": ["Giulio Chiribella", "Giacomo Mauro D'Ariano", "Paolo Perinotti"],
+      "title": "Informational derivation of quantum theory",
+      "year": 2011,
+      "journal": "Physical Review A",
+      "volume": "84",
+      "article_number": "012311",
+      "doi": "10.1103/PhysRevA.84.012311",
+      "url": "https://doi.org/10.1103/PhysRevA.84.012311",
+      "inspected_locations": ["Lemma 15", "Corollary 6"],
+      "role": "Probabilistic teleportation and the link product underlying the Bell contraction of one program pair."
+    },
+    {
+      "id": "chefles_jozsa_winter2004",
+      "type": "journal_article",
+      "authors": ["Anthony Chefles", "Richard Jozsa", "Andreas Winter"],
+      "title": "On the existence of physical transformations between sets of quantum states",
+      "year": 2004,
+      "journal": "International Journal of Quantum Information",
+      "volume": "2",
+      "pages": "11–21",
+      "doi": "10.1142/S0219749904000031",
+      "url": "https://arxiv.org/abs/quant-ph/0307227",
+      "role": "General finite-set Gram-matrix criteria for probabilistic pure-state conversion."
+    },
     {
       "id": "wang2020",
       "type": "journal_article",

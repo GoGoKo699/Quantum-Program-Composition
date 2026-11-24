@@ -109,6 +109,8 @@ They determine the fidelity scale up to constants across copy budgets, while lea
 
 Minimizing $m+n$ subject to the product law gives total copy complexity $\Theta(d)$. This is the operational role of balancing the supplies.
 
+With exact output and exact return of all unused programs required on accepted runs, the optimum is $M/[d(M+d-1)]$ for $M=\max(m,n)$. The [exact-return account](exact_joint_return.md) proves its own unrestricted converse and constructs the attaining instrument. Its success probability is distinct from the deterministic fidelity in Equation (6).
+
 ## Resources and boundaries
 
 The finite implementation uses known gates with conservative cost

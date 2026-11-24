@@ -18,6 +18,24 @@
       "index": 10,
       "source_sha256": "7827c577a7a64ed14eb5c2722e153dcf7648032220a59a1b18ce5aa5744cc50d",
       "expected_text": "mn≥p0(d2F0−1)/2"
+    },
+    {
+      "path": "README.md",
+      "index": 17,
+      "source_sha256": "32b8833a44a1886153e7366cd601237043e414a74635b24b541eeef3f99cd916",
+      "required_text": [
+        "pexact=",
+        "M+d−1"
+      ]
+    },
+    {
+      "path": "science/exact_joint_return.md",
+      "index": 7,
+      "source_sha256": "c86b8cc84fcc47fa017809bb007a5045a453af0af503c56e11112b4b1235ae24",
+      "required_text": [
+        "pexact=",
+        "M+d−1"
+      ]
     }
   ]
 }

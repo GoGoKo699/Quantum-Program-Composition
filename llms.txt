@@ -6,6 +6,7 @@ Entry: README.md
 Scientific reading route: science/README.md
 Definitions, exact claims, resources and optimality: science/model.md
 Physical instrument, PGM and global returned-program fidelity: science/construction.md
+Optimal exact composition with exact return of all unused programs: science/exact_joint_return.md
 All-dimensional mixed-moment comparison and universal converse: science/converse.md
 Projected QSVT, known symmetry phases and charged gate costs: science/implementation.md
 Meaning, precision alternatives and limitations: science/interpretation.md
@@ -22,7 +23,7 @@ Story route: README.md -> learning/TUTORIAL.md -> science/interpretation.md.
 Study route: learning/README.md -> learning/MILESTONES.md, using learning/WATROUS_BRIDGE.md for targeted Watrous readings and notation conversions.
 Theorem route: science/model.md -> science/construction.md -> science/converse.md -> science/implementation.md.
 Reproduction route: verification/README.md -> the three documented Python scripts.
-Sister route: science/canonical_purification_boundary.md -> Canonical-Purification-Cost/science/exact_frontier.md and science/mixed_frontier.md. The canonical repository owns those proofs; this project owns the unitary-Choi composition law.
+Sister route: science/exact_joint_return.md -> Canonical-Purification-Cost/science/exact_joint_return.md and Quantum-Multicopy-Teleportation/science/exact-return.md. Each project owns its theorem under its own resource model. See science/canonical_purification_boundary.md for the canonical target-only and mixed-source frontiers.
 
 Educational anchor: John Watrous, The Theory of Quantum Information (2018), official author-hosted prepublication manuscript. Its Choi operator is unnormalized and its fidelity is unsquared. The project divides a unitary channel's Choi operator by d and uses squared pure-target overlap. The learning map is a common route through the scientific understanding targets.
 

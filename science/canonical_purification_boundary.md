@@ -133,6 +133,8 @@ Scaling by this norm gives success $`2n/(d+2n-1)`$. The sister project's exact-o
 
 The shared method is therefore useful at the level of coherent contraction, separately symmetric copy pools, target/residual factorization and whole-space physical normalization. The suitable normalization and its performance analysis must be derived for the actual target and source orbit.
 
+The [exact joint-return composition theorem](exact_joint_return.md) applies scalar normalization when both the product program and every remainder must be exact. Its proof combines exact-output polynomial rigidity with the contraction norm also used in [exact Bell return](https://github.com/GoGoKo699/Quantum-Multicopy-Teleportation/blob/main/science/exact-return.md). On the canonical side, requiring [exact return of all unused pure specimens](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/main/science/exact_joint_return.md) restricts the general residual-operator problem above to the scalar case.
+
 ## What the exact frontier adds
 
 The canonical result starts from arbitrary accepting Kraus operators. Exact output forces their vacuum and signal amplitudes to obey a polynomial identity. After homogenization, the vacuum amplitude is divisible by $`\sum_i z_iw_i`$, leaving residual bidegree $`(n-1,m-1)`$. This is an exact-output restriction absent from an approximate fidelity promise.

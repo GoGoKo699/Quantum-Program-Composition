@@ -10,6 +10,7 @@ Read the account in this order:
 4. [Implementation](implementation.md): projected singular-value transformation, known symmetry phases, finite precision and charged gates.
 5. [Interpretation and limits](interpretation.md): what program composition enables, how the copy advantage arises, and the boundaries of the result.
 6. [Coherent contraction and exact canonical purification](canonical_purification_boundary.md): the sister project's exact pure and mixed frontier, the shared normalization problem, and the input/output assumptions that prevent a theorem transfer.
+7. [Exact composition and exact return](exact_joint_return.md) proves the sharp probability for accepted runs that return all unused programs. It connects the polynomial rigidity and contraction norm used across the three sister projects.
 
 The [related-work comparison](../references/RELATED_WORK.md) identifies inherited techniques and the distinct input models of earlier teleportation and program-processing tasks. The [verification guide](../verification/README.md) provides the commands and the tested scope of the finite checks. Those checks complement the analytical proofs; they do not replace them.
 

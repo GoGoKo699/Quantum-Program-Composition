@@ -25,7 +25,17 @@ where $m$ and $n$ are the two copy budgets. Balanced supplies therefore require 
 | Balanced copy cost | Optimal total copies of order $d$ at fixed error | [Model](science/model.md) |
 | Explicit known-gate circuit | Approximately $d^3$ gates, up to logarithmic factors, with balanced fixed-error supplies | [Implementation](science/implementation.md) |
 
-The lower bound holds for every allocation and dimension, including one copy of one program and order $d^2$ copies of the other. It allows collective processing, adaptive measurements and independent ancillary memory. The exact hypotheses and fidelity convention are in the [model](science/model.md).
+The copy-product lower bound holds for every allocation and dimension, including one copy of one program and order $d^2$ copies of the other. It allows collective processing, adaptive measurements and independent ancillary memory. The assumptions and fidelity convention are in the [model](science/model.md).
+
+## Exact return of unused programs
+
+An accepted run must deliver the exact composed program and return every unused program exactly. For $M=\max(m,n)$ the optimal success probability is
+
+```math
+p_{\mathrm{exact}}=\frac{M}{d(M+d-1)}.
+```
+
+The [exact-return proof](science/exact_joint_return.md) covers arbitrary global processors and gives an attaining Bell instrument. With four qubit programs, a 2+2 split succeeds with probability 1/3 and a 1+3 split succeeds with probability 3/8. [Multicopy Teleportation](https://github.com/GoGoKo699/Quantum-Multicopy-Teleportation/blob/main/science/exact-return.md) attains the same law under its correction-free Bell-return promise. [Canonical Purification Cost](https://github.com/GoGoKo699/Canonical-Purification-Cost/blob/main/science/exact_joint_return.md) uses the same contraction norm for exact return of its state and conjugate specimens.
 
 ## How the result works
 
@@ -42,6 +52,7 @@ Choose a route according to the question you want to answer:
 | Reader's question | Starting point |
 |---|---|
 | What is the task, and what is proved? | [Scientific account](science/README.md) and [exact model](science/model.md) |
+| What if every unused program must be returned exactly? | [Exact joint return](science/exact_joint_return.md) |
 | How does a stored operation become a composed program? | [Worked tutorial](learning/TUTORIAL.md) |
 | Which foundations connect to the proofs? | [Watrous bridge](learning/WATROUS_BRIDGE.md) |
 | How do the ideas fit into one learning route? | [Learning guide](learning/README.md) and [30 milestones](learning/MILESTONES.md) |
@@ -59,7 +70,7 @@ python verification/check_mixed_moments.py
 python verification/check_projected_encoding.py
 ```
 
-These scripts check physical-register routing, Gram moments, mixed Choi ensembles and the projected circuit encoding in small dimensions. They do not constitute a proof of the asymptotic theorems or a simulation of a fault-tolerant implementation.
+These scripts check physical-register routing, the exact-return norm and instrument, Gram moments, mixed Choi ensembles and the projected circuit encoding in small dimensions.
 
 ## Scope
 

@@ -33,7 +33,11 @@ $$
 p(d,k)=\frac{k}{d(k-1+d)}
 $$
 
-for their one-pair, multiple-input-copy task. Section 6 discusses extending it to multiple shared ports. The theorem here does not solve that entire proposed extension: it assumes the complete halves of unitary Choi specimens, allows an approximate output, and controls a different global target. Likewise, the present return guarantee does not establish the serial-use performance studied by Kopszak et al.; repeated compositions require their own error analysis.
+for their one-pair, multiple-input-copy task. Section 6 discusses extending it to multiple shared ports. The [sister teleportation theorem](https://github.com/GoGoKo699/Quantum-Multicopy-Teleportation/blob/main/science/exact-return.md) treats exact Bell return in that receiver-restricted setting. Composition supplies complete Choi programs and grants global access. The [exact composition theorem](../science/exact_joint_return.md) obtains the same probability for that distinct task through an unrestricted converse. The serial-use performance studied by Kopszak et al. concerns a different operation and resource account.
+
+### Link products and pure-state conversion
+
+[Chiribella, D'Ariano and Perinotti (2011)](https://doi.org/10.1103/PhysRevA.84.012311), Lemma 15 and Corollary 6, establish the teleportation and link-product composition identity behind a single program-pair contraction. [Chefles, Jozsa and Winter (2004)](https://arxiv.org/abs/quant-ph/0307227) give general Gram-matrix criteria for probabilistic transformations between finite sets of pure states. Exact composition with all programs returned adds a specific continuously indexed target and a sharp closed-form optimum. Its proof identifies the only possible success-Kraus action on the supplied orbit and evaluates its normalization.
 
 ## Collective extraction of amplitude products
 

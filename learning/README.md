@@ -22,6 +22,7 @@ research-level dependencies have their own cited scientific sources.
 | Inspect exact quantifiers and proofs | [Scientific account](../science/README.md) |
 | Reproduce the small-system checks | [Verification guide](../verification/README.md) |
 | Compare the method with exact state preparation | [Canonical-purification boundary](../science/canonical_purification_boundary.md) |
+| See what changes when all unused programs must be returned exactly | [Exact joint-return proof](../science/exact_joint_return.md) |
 
 The milestone map is defined by the scientific project and is shared by all
 readers. Its background phase builds the operational and mathematical
@@ -46,3 +47,5 @@ the learning route and stated precisely in the [model](../science/model.md)
 and [interpretation](../science/interpretation.md).
 
 The same Watrous foundations support the sister canonical-purification task, but its learning route has different understanding targets. The final milestones here use the [comparison](../science/canonical_purification_boundary.md) to audit a proposed transfer: check the accessible correlations, the exact or approximate output promise, every source charge, and the residual systems. Shared contraction machinery does not make the two resource laws interchangeable.
+
+At M28–M30, compare the three tasks through a shared Bell-contraction norm. The composition and correction-free teleportation successes depend on the larger pool in the same way. Canonical purification changes the formula because it coherently combines contraction with signal extraction.

@@ -2,7 +2,7 @@
 
 The [hosted review workflow](../../.github/workflows/hosted-review.yml) compares the mathematics in every tracked Markdown page with the actual, commit-pinned GitHub rendering at widths of 1440 and 760 pixels. It saves source inventories, rendered MathML comparisons, page HTML, screenshots and a bound `hosted-report.json`.
 
-The [text contract](math-contract.json) adds exact accessible-text checks for the README's headline threshold and two finite guarantees, tied to their source-expression hashes. These source-derived expectations supplement the structural checks for every formula; they are not captured host evidence and introduce no renderer exceptions.
+The [text contract](math-contract.json) adds exact accessible-text checks for the README's headline threshold, finite approximation bounds and the exact-return probabilities in the README and proof, tied to their source-expression hashes. These source-derived expectations supplement the structural checks for every formula; they are not captured host evidence and introduce no renderer exceptions.
 
 The browser uses a fresh anonymous context and normal certificate verification. Dependencies, browser binaries and capture output live in the runner's temporary directory, outside the source checkout. The job grants `contents: read`, disables checkout credential persistence, uses no repository secrets and does not modify the repository. Failed comparisons fail the job; the artifact step also preserves available evidence from failed captures.
 
