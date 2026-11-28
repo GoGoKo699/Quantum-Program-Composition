@@ -1,0 +1,14 @@
+{
+  "README.md": [
+    "Run the collective circuit",
+    "Exact return of unused programs"
+  ],
+  "science/implementation.md": [
+    "1. A projected encoding on physical registers",
+    "3. Deterministic completion and finite precision",
+    "5. Charged circuit resources"
+  ],
+  "science/exact_joint_return.md": [
+    "Attaining the bound"
+  ]
+}
